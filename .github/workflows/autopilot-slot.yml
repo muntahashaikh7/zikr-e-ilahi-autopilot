@@ -123,22 +123,33 @@ jobs:
           python3 scripts/upload_youtube.py out/reel.mp4 "out/seo-$ENTRY.json" | tee yt_out.txt
           echo "url=$(grep -o 'https://www.youtube.com/watch?v=[^ ]*' yt_out.txt | head -1)" >> $GITHUB_OUTPUT
 
-      - name: Upload to Instagram + Facebook
+      - name: Upload to Instagram (reel)
+        if: ${{ secrets.IG_TOKEN != '' }}
         env:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          ENTRY: ${{ steps.pick.outputs.entry }}
+          VIDEO_URL: ${{ steps.release.outputs.url }}
+        run: |
+          IG_CAP=$(python3 -c "import json;print(json.load(open('out/mp-$ENTRY.json'))['platforms']['instagram']['caption'])")
+          echo "=== IG ==="
+          python3 scripts/upload_instagram.py "$VIDEO_URL" "$IG_CAP" | tee -a results.txt || echo "IG FAILED" | tee -a results.txt
+
+      - name: Upload to Facebook (Page video)
+        if: ${{ secrets.FB_PAGE_TOKEN != '' }}
+        env:
           FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
           FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
           ENTRY: ${{ steps.pick.outputs.entry }}
           VIDEO_URL: ${{ steps.release.outputs.url }}
         run: |
-          IG_CAP=$(python3 -c "import json;print(json.load(open('out/mp-$ENTRY.json'))['platforms']['instagram']['caption'])")
           FB_CAP=$(python3 -c "import json;print(json.load(open('out/mp-$ENTRY.json'))['platforms']['facebook']['caption'])")
           FB_TITLE=$(python3 -c "import json;print(json.load(open('out/seo-$ENTRY.json'))['seo']['title'])")
-          echo "=== IG ==="
-          python3 scripts/upload_instagram.py "$VIDEO_URL" "$IG_CAP" | tee -a results.txt || echo "IG FAILED" | tee -a results.txt
           echo "=== FB ==="
           python3 scripts/upload_facebook.py --file-url "$VIDEO_URL" --title "$FB_TITLE" --description "$FB_CAP" | tee -a results.txt || echo "FB FAILED" | tee -a results.txt
+
+      - name: TikTok status
+        run: |
           echo "=== TikTok (pending app approval) ==="
           python3 scripts/upload_tiktok.py | tee -a results.txt
 
