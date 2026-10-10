@@ -124,25 +124,25 @@ jobs:
           echo "url=$(grep -o 'https://www.youtube.com/watch?v=[^ ]*' yt_out.txt | head -1)" >> $GITHUB_OUTPUT
 
       - name: Upload to Instagram (reel)
-        if: ${{ secrets.IG_TOKEN != '' }}
         env:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
           ENTRY: ${{ steps.pick.outputs.entry }}
           VIDEO_URL: ${{ steps.release.outputs.url }}
         run: |
+          if [ -z "$IG_TOKEN" ]; then echo "IG secrets not set - skipping"; exit 0; fi
           IG_CAP=$(python3 -c "import json;print(json.load(open('out/mp-$ENTRY.json'))['platforms']['instagram']['caption'])")
           echo "=== IG ==="
           python3 scripts/upload_instagram.py "$VIDEO_URL" "$IG_CAP" | tee -a results.txt || echo "IG FAILED" | tee -a results.txt
 
       - name: Upload to Facebook (Page video)
-        if: ${{ secrets.FB_PAGE_TOKEN != '' }}
         env:
           FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
           FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
           ENTRY: ${{ steps.pick.outputs.entry }}
           VIDEO_URL: ${{ steps.release.outputs.url }}
         run: |
+          if [ -z "$FB_PAGE_TOKEN" ]; then echo "FB secrets not set - skipping"; exit 0; fi
           FB_CAP=$(python3 -c "import json;print(json.load(open('out/mp-$ENTRY.json'))['platforms']['facebook']['caption'])")
           FB_TITLE=$(python3 -c "import json;print(json.load(open('out/seo-$ENTRY.json'))['seo']['title'])")
           echo "=== FB ==="
