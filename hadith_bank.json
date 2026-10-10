@@ -1,0 +1,1024 @@
+{
+  "_rotation": "Autopilot rotation scheme: pick entries SEQUENTIALLY by index (0..N-1), advancing one step per video. Persist the last-used index; wrap to 0 after the last entry. Never repeat or skip an entry until the full bank has cycled once. This guarantees no hadith repeats too soon and every entry gets equal airtime.",
+  "_count": 113,
+  "_verified": "2026-10-09. Every entry verified: book+number checked against source text (hadith-api / sunnah.com-scraped Muslim dataset). Rejected: daif/muwdu or unverifiable entries. Grades: sahih (Bukhari/Muslim or explicit sahih grading), hasan (explicit hasan grading by Tirmidhi/scholars).",
+  "entries": [
+    {
+      "id": "akhirah-001",
+      "topic": "akhirah",
+      "book": "bukhari",
+      "number": "6416",
+      "grade": "sahih",
+      "arabic": "‏ كُنْ فِي الدُّنْيَا كَأَنَّكَ غَرِيبٌ، أَوْ عَابِرُ سَبِيلٍ ‏",
+      "urdu_tarjuma": "Duniya mein aise raho jaise musafir ya raah guzarne wala."
+    },
+    {
+      "id": "akhirah-002",
+      "topic": "akhirah",
+      "book": "muslim",
+      "number": "2742",
+      "grade": "sahih",
+      "arabic": "إِنَّ الدُّنْيَا حُلْوَةٌ خَضِرَةٌ وَإِنَّ اللَّهَ مُسْتَخْلِفُكُمْ فِيهَا فَيَنْظُرُ كَيْفَ تَعْمَلُونَ فَاتَّقُوا الدُّنْيَا وَاتَّقُوا النِّسَاءَ فَإِنَّ أَوَّلَ فِتْنَةِ بَنِي إِسْرَائِيلَ كَانَتْ فِي النِّسَاءِ",
+      "urdu_tarjuma": "Duniya meethi aur sabz-o-shadab hai, aur Allah ne tumhein is mein khalifa banaya hai taake dekhe tum kaise amal karte ho."
+    },
+    {
+      "id": "akhirah-003",
+      "topic": "akhirah",
+      "book": "tirmidhi",
+      "number": "2307",
+      "grade": "hasan",
+      "arabic": "‏ أَكْثِرُوا ذِكْرَ هَاذِمِ اللَّذَّاتِ ‏",
+      "urdu_tarjuma": "Lazaton ko khatm karne wali (maut) ko kasrat se yaad karo."
+    },
+    {
+      "id": "akhirah-004",
+      "topic": "akhirah",
+      "book": "tirmidhi",
+      "number": "2417",
+      "grade": "sahih",
+      "arabic": "‏ لاَ تَزُولُ قَدَمَا عَبْدٍ يَوْمَ الْقِيَامَةِ حَتَّى يُسْأَلَ عَنْ عُمْرِهِ فِيمَا أَفْنَاهُ وَعَنْ عِلْمِهِ فِيمَا فَعَلَ وَعَنْ مَالِهِ مِنْ أَيْنَ اكْتَسَبَهُ وَفِيمَا أَنْفَقَهُ وَعَنْ جِسْمِهِ فِيمَا أَبْلاَهُ ‏",
+      "urdu_tarjuma": "Qayamat ke din ibn-e-Adam ke qadam apne Rab ke paas se nahi hatenge jab tak paanch cheezon ka sawal na ho: umr kahan guzari, jawani kahan khapayi."
+    },
+    {
+      "id": "akhirah-005",
+      "topic": "akhirah",
+      "book": "muslim",
+      "number": "2822",
+      "grade": "sahih",
+      "arabic": "حُفَّتِ الْجَنَّةُ بِالْمَكَارِهِ وَحُفَّتِ النَّارُ بِالشَّهَوَاتِ",
+      "urdu_tarjuma": "Jannat takleefon se gheri hui hai aur Jahannam khwahishon se."
+    },
+    {
+      "id": "akhirah-006",
+      "topic": "akhirah",
+      "book": "bukhari",
+      "number": "6507",
+      "grade": "sahih",
+      "arabic": "‏ لَيْسَ ذَاكَ، وَلَكِنَّ الْمُؤْمِنَ إِذَا حَضَرَهُ الْمَوْتُ بُشِّرَ بِرِضْوَانِ اللَّهِ وَكَرَامَتِهِ، فَلَيْسَ شَىْءٌ أَحَبَّ إِلَيْهِ مِمَّا أَمَامَهُ، فَأَحَبَّ لِقَاءَ اللَّهِ وَأَحَبَّ اللَّهُ لِقَاءَهُ، وَإِنَّ الْكَافِرَ إِذَا حُضِرَ بُشِّرَ بِعَذَابِ اللَّهِ وَعُقُوبَتِهِ، فَلَيْسَ شَىْءٌ أَكْرَهَ إِلَيْهِ مِمَّا أَمَامَهُ، كَرِهَ لِقَاءَ اللَّهِ وَكَرِهَ اللَّهُ لِقَاءَهُ ‏",
+      "urdu_tarjuma": "Jo Allah se mulaqat ko pasand kare, Allah us se mulaqat ko pasand karta hai."
+    },
+    {
+      "id": "akhirah-007",
+      "topic": "akhirah",
+      "book": "tirmidhi",
+      "number": "2308",
+      "grade": "hasan",
+      "arabic": "‏ إِنَّ الْقَبْرَ أَوَّلُ مَنَازِلِ الآخِرَةِ فَإِنْ نَجَا مِنْهُ فَمَا بَعْدَهُ أَيْسَرُ مِنْهُ وَإِنْ لَمْ يَنْجُ مِنْهُ فَمَا بَعْدَهُ أَشَدُّ مِنْهُ ‏",
+      "urdu_tarjuma": "Qabr aakhirat ki manzilon mein se pehli manzil hai; jo is se najaat pa gaya uske liye baad ki manzilein aasaan hongi."
+    },
+    {
+      "id": "akhirah-008",
+      "topic": "akhirah",
+      "book": "bukhari",
+      "number": "660",
+      "grade": "sahih",
+      "arabic": "‏ سَبْعَةٌ يُظِلُّهُمُ اللَّهُ فِي ظِلِّهِ يَوْمَ لاَ ظِلَّ إِلاَّ ظِلُّهُ الإِمَامُ الْعَادِلُ، وَشَابٌّ نَشَأَ فِي عِبَادَةِ رَبِّهِ، وَرَجُلٌ قَلْبُهُ مُعَلَّقٌ فِي الْمَسَاجِدِ، وَرَجُلاَنِ تَحَابَّا فِي اللَّهِ اجْتَمَعَا عَلَيْهِ وَتَفَرَّقَا عَلَيْهِ، وَرَجُلٌ طَلَبَتْهُ امْرَأَةٌ ذَاتُ مَنْصِبٍ وَجَمَالٍ فَقَالَ إِنِّي أَخَافُ اللَّهَ‏.‏ وَرَجُلٌ تَصَدَّقَ أَخْفَى حَتَّى لاَ تَعْلَمَ شِمَالُهُ مَا تُنْفِقُ يَمِينُهُ، وَرَجُلٌ ذَكَرَ اللَّهَ خَالِيًا فَفَاضَتْ عَيْنَاهُ ‏",
+      "urdu_tarjuma": "Saat qism ke log honge jinhein Allah us din apne saaye mein jagah dega jis din uske saaye ke siwa koi saya na hoga."
+    },
+    {
+      "id": "akhirah-010",
+      "topic": "akhirah",
+      "book": "bukhari",
+      "number": "6439",
+      "grade": "sahih",
+      "arabic": "‏ لَوْ أَنَّ لاِبْنِ آدَمَ وَادِيًا مِنْ ذَهَبٍ أَحَبَّ أَنْ يَكُونَ لَهُ وَادِيَانِ، وَلَنْ يَمْلأَ فَاهُ إِلاَّ التُّرَابُ، وَيَتُوبُ اللَّهُ عَلَى مَنْ تَابَ ‏",
+      "urdu_tarjuma": "Agar ibn-e-Adam ke paas sone ki ek waadi ho to wo doosri chahega, aur uska munh mitti ke siwa koi cheez nahi bharegi."
+    },
+    {
+      "id": "akhirah-011",
+      "topic": "akhirah",
+      "book": "bukhari",
+      "number": "6442",
+      "grade": "sahih",
+      "arabic": "‏ فَإِنَّ مَالَهُ مَا قَدَّمَ، وَمَالُ وَارِثِهِ مَا أَخَّرَ ‏",
+      "urdu_tarjuma": "Tum mein se kaun apne waris ke maal ko apne maal se zyada pasand karta hai? Tumhara maal wo hai jo tumne (Allah ki raah mein) aage bheja."
+    },
+    {
+      "id": "akhirah-012",
+      "topic": "akhirah",
+      "book": "tirmidhi",
+      "number": "2465",
+      "grade": "sahih",
+      "arabic": "‏ مَنْ كَانَتِ الآخِرَةُ هَمَّهُ جَعَلَ اللَّهُ غِنَاهُ فِي قَلْبِهِ وَجَمَعَ لَهُ شَمْلَهُ وَأَتَتْهُ الدُّنْيَا وَهِيَ رَاغِمَةٌ وَمَنْ كَانَتِ الدُّنْيَا هَمَّهُ جَعَلَ اللَّهُ فَقْرَهُ بَيْنَ عَيْنَيْهِ وَفَرَّقَ عَلَيْهِ شَمْلَهَ وَلَمْ يَأْتِهِ مِنَ الدُّنْيَا إِلاَّ مَا قُدِّرَ لَهُ ‏",
+      "urdu_tarjuma": "Jis ka gham aakhirat ho, Allah uske dil mein be-niyazi daal deta hai aur uske bikhre kaam samet deta hai."
+    },
+    {
+      "id": "akhlaq-001",
+      "topic": "akhlaq",
+      "book": "bukhari",
+      "number": "13",
+      "grade": "sahih",
+      "arabic": "‏ لا يُؤْمِنُ أَحَدُكُمْ حَتَّى يُحِبَّ لأَخِيهِ مَا يُحِبُّ لِنَفْسِهِ ‏",
+      "urdu_tarjuma": "Tum mein se koi momin nahi ho sakta jab tak apne bhai ke liye wahi pasand na kare jo apne liye pasand karta hai."
+    },
+    {
+      "id": "akhlaq-002",
+      "topic": "akhlaq",
+      "book": "bukhari",
+      "number": "6018",
+      "grade": "sahih",
+      "arabic": "‏ مَنْ كَانَ يُؤْمِنُ بِاللَّهِ وَالْيَوْمِ الآخِرِ فَلاَ يُؤْذِ جَارَهُ، وَمَنْ كَانَ يُؤْمِنُ بِاللَّهِ وَالْيَوْمِ الآخِرِ فَلْيُكْرِمْ ضَيْفَهُ، وَمَنْ كَانَ يُؤْمِنُ بِاللَّهِ وَالْيَوْمِ الآخِرِ فَلْيَقُلْ خَيْرًا أَوْ لِيَصْمُتْ ‏",
+      "urdu_tarjuma": "Jo Allah aur aakhirat par iman rakhta hai, use chahiye ke bhalai ki baat kahe ya khamosh rahe."
+    },
+    {
+      "id": "akhlaq-003",
+      "topic": "akhlaq",
+      "book": "bukhari",
+      "number": "11",
+      "grade": "sahih",
+      "arabic": "‏ مَنْ سَلِمَ الْمُسْلِمُونَ مِنْ لِسَانِهِ وَيَدِهِ ‏",
+      "urdu_tarjuma": "Musalman wo hai jiski zuban aur haath se doosre musalman mehfooz hon."
+    },
+    {
+      "id": "akhlaq-004",
+      "topic": "akhlaq",
+      "book": "muslim",
+      "number": "2564",
+      "grade": "sahih",
+      "arabic": "إِنَّ اللَّهَ لاَ يَنْظُرُ إِلَى أَجْسَادِكُمْ وَلاَ إِلَى صُوَرِكُمْ وَلَكِنْ يَنْظُرُ إِلَى قُلُوبِكُمْ",
+      "urdu_tarjuma": "Allah tumhari shaklon aur maalon ko nahi dekhta, balke tumhare dilon aur aamaal ko dekhta hai."
+    },
+    {
+      "id": "akhlaq-005",
+      "topic": "akhlaq",
+      "book": "tirmidhi",
+      "number": "2018",
+      "grade": "hasan",
+      "arabic": "‏ إِنَّ مِنْ أَحَبِّكُمْ إِلَىَّ وَأَقْرَبِكُمْ مِنِّي مَجْلِسًا يَوْمَ الْقِيَامَةِ أَحَاسِنَكُمْ أَخْلاَقًا وَإِنَّ أَبْغَضَكُمْ إِلَىَّ وَأَبْعَدَكُمْ مِنِّي مَجْلِسًا يَوْمَ الْقِيَامَةِ الثَّرْثَارُونَ وَالْمُتَشَدِّقُونَ وَالْمُتَفَيْهِقُونَ ‏",
+      "urdu_tarjuma": "Qayamat ke din mujh se sab se zyada mehboob aur sab se qareeb wo honge jinke akhlaq sab se achhe hain."
+    },
+    {
+      "id": "akhlaq-006",
+      "topic": "akhlaq",
+      "book": "bukhari",
+      "number": "3559",
+      "grade": "sahih",
+      "arabic": "‏ إِنَّ مِنْ خِيَارِكُمْ أَحْسَنَكُمْ أَخْلاَقًا ‏",
+      "urdu_tarjuma": "Tum mein se behtareen wo hain jinke akhlaq sab se achhe hain."
+    },
+    {
+      "id": "akhlaq-007",
+      "topic": "akhlaq",
+      "book": "muslim",
+      "number": "2594",
+      "grade": "sahih",
+      "arabic": "إِنَّ الرِّفْقَ لاَ يَكُونُ فِي شَىْءٍ إِلاَّ زَانَهُ وَلاَ يُنْزَعُ مِنْ شَىْءٍ إِلاَّ شَانَهُ",
+      "urdu_tarjuma": "Narmi jis cheez mein hoti hai use khoobsurat bana deti hai, aur jis se nikaal li jaye use badnuma kar deti hai."
+    },
+    {
+      "id": "akhlaq-008",
+      "topic": "akhlaq",
+      "book": "muslim",
+      "number": "2593",
+      "grade": "sahih",
+      "arabic": "يَا عَائِشَةُ إِنَّ اللَّهَ رَفِيقٌ يُحِبُّ الرِّفْقَ وَيُعْطِي عَلَى الرِّفْقِ مَا لاَ يُعْطِي عَلَى الْعُنْفِ وَمَا لاَ يُعْطِي عَلَى مَا سِوَاهُ",
+      "urdu_tarjuma": "Beshak Allah narm hai aur har kaam mein narmi ko pasand karta hai."
+    },
+    {
+      "id": "akhlaq-009",
+      "topic": "akhlaq",
+      "book": "bukhari",
+      "number": "12",
+      "grade": "sahih",
+      "arabic": "‏ تُطْعِمُ الطَّعَامَ، وَتَقْرَأُ السَّلاَمَ عَلَى مَنْ عَرَفْتَ وَمَنْ لَمْ تَعْرِفْ ‏",
+      "urdu_tarjuma": "(Behtareen Islam ye hai ke) khana khilao aur har ek ko salam karo, jise jante ho aur jise nahi jante."
+    },
+    {
+      "id": "akhlaq-010",
+      "topic": "akhlaq",
+      "book": "muslim",
+      "number": "2559",
+      "grade": "sahih",
+      "arabic": "لاَ تَحَاسَدُوا وَلاَ تَبَاغَضُوا وَلاَ تَقَاطَعُوا وَكُونُوا عِبَادَ اللَّهِ إِخْوَانًا",
+      "urdu_tarjuma": "Hasad na karo, (boli mein) dhoka na do, bughz na rakho, peeth na phero, aur Allah ke bando! Aapas mein bhai bhai ban jao."
+    },
+    {
+      "id": "akhlaq-011",
+      "topic": "akhlaq",
+      "book": "bukhari",
+      "number": "2442",
+      "grade": "sahih",
+      "arabic": "‏ الْمُسْلِمُ أَخُو الْمُسْلِمِ، لاَ يَظْلِمُهُ وَلاَ يُسْلِمُهُ، وَمَنْ كَانَ فِي حَاجَةِ أَخِيهِ كَانَ اللَّهُ فِي حَاجَتِهِ، وَمَنْ فَرَّجَ عَنْ مُسْلِمٍ كُرْبَةً فَرَّجَ اللَّهُ عَنْهُ كُرْبَةً مِنْ كُرُبَاتِ يَوْمِ الْقِيَامَةِ، وَمَنْ سَتَرَ مُسْلِمًا سَتَرَهُ اللَّهُ يَوْمَ الْقِيَامَةِ ‏",
+      "urdu_tarjuma": "Musalman musalman ka bhai hai, na us par zulm karta hai na use (dushman ke) hawale karta hai."
+    },
+    {
+      "id": "akhlaq-012",
+      "topic": "akhlaq",
+      "book": "muslim",
+      "number": "2699",
+      "grade": "sahih",
+      "arabic": "مَنْ نَفَّسَ عَنْ مُؤْمِنٍ كُرْبَةً مِنْ كُرَبِ الدُّنْيَا نَفَّسَ اللَّهُ عَنْهُ كُرْبَةً مِنْ كُرَبِ يَوْمِ الْقِيَامَةِ وَمَنْ يَسَّرَ عَلَى مُعْسِرٍ يَسَّرَ اللَّهُ عَلَيْهِ فِي الدُّنْيَا وَالآخِرَةِ وَمَنْ سَتَرَ مُسْلِمًا سَتَرَهُ اللَّهُ فِي الدُّنْيَا وَالآخِرَةِ وَاللَّهُ فِي عَوْنِ الْعَبْدِ مَا كَانَ الْعَبْدُ فِي عَوْنِ أَخِيهِ وَمَنْ سَلَكَ طَرِيقًا يَلْتَمِسُ فِيهِ عِلْمًا سَهَّلَ اللَّهُ لَهُ بِهِ طَرِيقًا إِلَى الْجَنَّةِ وَمَا اجْتَمَعَ قَوْمٌ فِي بَيْتٍ مِنْ بُيُوتِ اللَّهِ يَتْلُونَ كِتَابَ اللَّهِ وَيَتَدَارَسُونَهُ بَيْنَهُمْ إِلاَّ نَزَلَتْ عَلَيْهِمُ السَّكِينَةُ وَغَشِيَتْهُمُ الرَّحْمَةُ وَحَفَّتْهُمُ الْمَلاَئِكَةُ وَذَكَرَهُمُ اللَّهُ فِيمَنْ عِنْدَهُ وَمَنْ بَطَّأَ بِهِ عَمَلُهُ لَمْ يُسْرِعْ بِهِ نَسَبُهُ",
+      "urdu_tarjuma": "Jo kisi momin ki duniya ki takleefon mein se ek takleef door kare, Allah Qayamat ki takleefon mein se uski ek takleef door karega."
+    },
+    {
+      "id": "akhlaq-013",
+      "topic": "akhlaq",
+      "book": "bukhari",
+      "number": "6114",
+      "grade": "sahih",
+      "arabic": "‏ لَيْسَ الشَّدِيدُ بِالصُّرَعَةِ، إِنَّمَا الشَّدِيدُ الَّذِي يَمْلِكُ نَفْسَهُ عِنْدَ الْغَضَبِ ‏",
+      "urdu_tarjuma": "Pehelwan wo nahi jo (kushti mein) gira de; asal pehelwan wo hai jo ghusse ke waqt apne nafs par qaabu rakhe."
+    },
+    {
+      "id": "akhlaq-014",
+      "topic": "akhlaq",
+      "book": "abudawud",
+      "number": "4799",
+      "grade": "sahih",
+      "arabic": "‏ مَا مِنْ شَىْءٍ أَثْقَلُ فِي الْمِيزَانِ مِنْ حُسْنِ الْخُلُقِ ‏",
+      "urdu_tarjuma": "Mizaan mein husn-e-akhlaq se bhari koi cheez nahi hogi."
+    },
+    {
+      "id": "akhlaq-015",
+      "topic": "akhlaq",
+      "book": "muslim",
+      "number": "35",
+      "grade": "sahih",
+      "arabic": "الإِيمَانُ بِضْعٌ وَسَبْعُونَ شُعْبَةً وَالْحَيَاءُ شُعْبَةٌ مِنَ الإِيمَانِ",
+      "urdu_tarjuma": "Iman ki sattar se kuch zyada shaakhein hain; sab se afzal 'La ilaha illa Allah' kehna hai aur sab se adna raste se takleef-deh cheez hatana hai."
+    },
+    {
+      "id": "akhlaq-016",
+      "topic": "akhlaq",
+      "book": "bukhari",
+      "number": "6116",
+      "grade": "sahih",
+      "arabic": "لَا تَغْضَبْ",
+      "urdu_tarjuma": "Ghussa na karo."
+    },
+    {
+      "id": "akhlaq-017",
+      "topic": "akhlaq",
+      "book": "tirmidhi",
+      "number": "1956",
+      "grade": "sahih",
+      "arabic": "‏ تَبَسُّمُكَ فِي وَجْهِ أَخِيكَ لَكَ صَدَقَةٌ وَأَمْرُكَ بِالْمَعْرُوفِ وَنَهْيُكَ عَنِ الْمُنْكَرِ صَدَقَةٌ وَإِرْشَادُكَ الرَّجُلَ فِي أَرْضِ الضَّلاَلِ لَكَ صَدَقَةٌ وَبَصَرُكَ لِلرَّجُلِ الرَّدِيءِ الْبَصَرِ لَكَ صَدَقَةٌ وَإِمَاطَتُكَ الْحَجَرَ وَالشَّوْكَةَ وَالْعَظْمَ عَنِ الطَّرِيقِ لَكَ صَدَقَةٌ وَإِفْرَاغُكَ مِنْ دَلْوِكَ فِي دَلْوِ أَخِيكَ لَكَ صَدَقَةٌ ‏",
+      "urdu_tarjuma": "Apne bhai ke chehre par tumhara muskurana (bhi tumhare liye) sadqa hai."
+    },
+    {
+      "id": "akhlaq-018",
+      "topic": "akhlaq",
+      "book": "bukhari",
+      "number": "6474",
+      "grade": "sahih",
+      "arabic": "‏ مَنْ يَضْمَنْ لِي مَا بَيْنَ لَحْيَيْهِ وَمَا بَيْنَ رِجْلَيْهِ أَضْمَنْ لَهُ الْجَنَّةَ ‏",
+      "urdu_tarjuma": "Jo mujhe apni zuban aur sharamgah ki hifazat ki zamanat de, main use Jannat ki zamanat deta hun."
+    },
+    {
+      "id": "akhlaq-019",
+      "topic": "akhlaq",
+      "book": "bukhari",
+      "number": "6005",
+      "grade": "sahih",
+      "arabic": "‏ أَنَا وَكَافِلُ الْيَتِيمِ، فِي الْجَنَّةِ هَكَذَا ‏",
+      "urdu_tarjuma": "Main aur yateem ki kafalat karne wala Jannat mein is tarah (sath) honge."
+    },
+    {
+      "id": "akhlaq-020",
+      "topic": "akhlaq",
+      "book": "bukhari",
+      "number": "6133",
+      "grade": "sahih",
+      "arabic": "‏ لاَ يُلْدَغُ الْمُؤْمِنُ مِنْ جُحْرٍ وَاحِدٍ مَرَّتَيْنِ ‏",
+      "urdu_tarjuma": "Momin ek surakh se do martaba nahi dasa jata."
+    },
+    {
+      "id": "akhlaq-021",
+      "topic": "akhlaq",
+      "book": "tirmidhi",
+      "number": "1987",
+      "grade": "hasan",
+      "arabic": "‏ اتَّقِ اللَّهَ حَيْثُمَا كُنْتَ وَأَتْبِعِ السَّيِّئَةَ الْحَسَنَةَ تَمْحُهَا وَخَالِقِ النَّاسَ بِخُلُقٍ حَسَنٍ ‏",
+      "urdu_tarjuma": "Tum jahan kahin ho Allah se daro, burai ke baad neki karo wo use mita degi, aur logon se achhe akhlaq se pesh aao."
+    },
+    {
+      "id": "akhlaq-022",
+      "topic": "akhlaq",
+      "book": "muslim",
+      "number": "55",
+      "grade": "sahih",
+      "arabic": "لِلَّهِ وَلِكِتَابِهِ وَلِرَسُولِهِ وَلأَئِمَّةِ الْمُسْلِمِينَ وَعَامَّتِهِمْ",
+      "urdu_tarjuma": "Deen (sara) naseehat hai."
+    },
+    {
+      "id": "akhlaq-023",
+      "topic": "akhlaq",
+      "book": "bukhari",
+      "number": "481",
+      "grade": "sahih",
+      "arabic": "‏ إِنَّ الْمُؤْمِنَ لِلْمُؤْمِنِ كَالْبُنْيَانِ، يَشُدُّ بَعْضُهُ بَعْضًا ‏",
+      "urdu_tarjuma": "Momin momin ke liye imaarat ki tarah hai, jiska ek hissa doosre ko mazboot karta hai."
+    },
+    {
+      "id": "akhlaq-024",
+      "topic": "akhlaq",
+      "book": "tirmidhi",
+      "number": "2317",
+      "grade": "hasan",
+      "arabic": "‏ مِنْ حُسْنِ إِسْلاَمِ الْمَرْءِ تَرْكُهُ مَا لاَ يَعْنِيهِ ‏",
+      "urdu_tarjuma": "Aadmi ke Islam ki khoobi ye hai ke wo be-maqsad kaamon ko chhor de."
+    },
+    {
+      "id": "dhikr-001",
+      "topic": "dhikr",
+      "book": "bukhari",
+      "number": "6405",
+      "grade": "sahih",
+      "arabic": "‏ مَنْ قَالَ سُبْحَانَ اللَّهِ وَبِحَمْدِهِ‏.‏ فِي يَوْمٍ مِائَةَ مَرَّةٍ حُطَّتْ خَطَايَاهُ، وَإِنْ كَانَتْ مِثْلَ زَبَدِ الْبَحْرِ ‏",
+      "urdu_tarjuma": "Jo shakhs din mein sau martaba 'SubhanAllahi wa bihamdihi' kahe, uske gunah maaf kar diye jate hain, chahe samandar ki jhag ke barabar hon."
+    },
+    {
+      "id": "dhikr-002",
+      "topic": "dhikr",
+      "book": "muslim",
+      "number": "2137",
+      "grade": "sahih",
+      "arabic": "أَحَبُّ الْكَلاَمِ إِلَى اللَّهِ أَرْبَعٌ سُبْحَانَ اللَّهِ وَالْحَمْدُ لِلَّهِ وَلاَ إِلَهَ إِلاَّ اللَّهُ وَاللَّهُ أَكْبَرُ. لاَ يَضُرُّكَ بَأَيِّهِنَّ بَدَأْتَ. وَلاَ تُسَمِّيَنَّ غُلاَمَكَ يَسَارًا وَلاَ رَبَاحًا وَلاَ نَجِيحًا وَلاَ أَفْلَحَ فَإِنَّكَ تَقُولُ أَثَمَّ هُوَ فَلاَ يَكُونُ فَيَقُولُ لاَ.",
+      "urdu_tarjuma": "Allah ko sab se pyare kalimaat chaar hain: SubhanAllah, Alhamdulillah, La ilaha illa Allah, Allahu Akbar."
+    },
+    {
+      "id": "dhikr-003",
+      "topic": "dhikr",
+      "book": "muslim",
+      "number": "2704",
+      "grade": "sahih",
+      "arabic": "أَيُّهَا النَّاسُ ارْبَعُوا عَلَى أَنْفُسِكُمْ إِنَّكُمْ لَيْسَ تَدْعُونَ أَصَمَّ وَلاَ غَائِبًا إِنَّكُمْ تَدْعُونَ سَمِيعًا قَرِيبًا وَهُوَ مَعَكُمْ",
+      "urdu_tarjuma": "'La hawla wa la quwwata illa billah' Jannat ke khazanon mein se ek khazana hai."
+    },
+    {
+      "id": "dhikr-004",
+      "topic": "dhikr",
+      "book": "bukhari",
+      "number": "6406",
+      "grade": "sahih",
+      "arabic": "‏ كَلِمَتَانِ خَفِيفَتَانِ عَلَى اللِّسَانِ، ثَقِيلَتَانِ فِي الْمِيزَانِ، حَبِيبَتَانِ إِلَى الرَّحْمَنِ، سُبْحَانَ اللَّهِ وَبِحَمْدِهِ، سُبْحَانَ اللَّهِ الْعَظِيمِ ‏",
+      "urdu_tarjuma": "Do kalime zuban par halke, mizaan mein bhari, Rahman ko mehboob hain: SubhanAllahi wa bihamdihi, SubhanAllahil Azeem."
+    },
+    {
+      "id": "dhikr-005",
+      "topic": "dhikr",
+      "book": "muslim",
+      "number": "2702",
+      "grade": "sahih",
+      "arabic": "يَا أَيُّهَا النَّاسُ تُوبُوا إِلَى اللَّهِ فَإِنِّي أَتُوبُ فِي الْيَوْمِ إِلَيْهِ مِائَةَ مَرَّةٍ",
+      "urdu_tarjuma": "Aye logo! Allah se toba karo, main din mein sau martaba Us se toba karta hun."
+    },
+    {
+      "id": "dhikr-006",
+      "topic": "dhikr",
+      "book": "bukhari",
+      "number": "6403",
+      "grade": "sahih",
+      "arabic": "‏ مَنْ قَالَ لاَ إِلَهَ إِلاَّ اللَّهُ، وَحْدَهُ لاَ شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهْوَ عَلَى كُلِّ شَىْءٍ قَدِيرٌ‏.‏ فِي يَوْمٍ مِائَةَ مَرَّةٍ، كَانَتْ لَهُ عَدْلَ عَشْرِ رِقَابٍ، وَكُتِبَ لَهُ مِائَةُ حَسَنَةٍ، وَمُحِيَتْ عَنْهُ مِائَةُ سَيِّئَةٍ، وَكَانَتْ لَهُ حِرْزًا مِنَ الشَّيْطَانِ يَوْمَهُ ذَلِكَ، حَتَّى يُمْسِيَ، وَلَمْ يَأْتِ أَحَدٌ بِأَفْضَلَ مِمَّا جَاءَ بِهِ إِلاَّ رَجُلٌ عَمِلَ أَكْثَرَ مِنْهُ ‏",
+      "urdu_tarjuma": "Jo din mein sau martaba ye kalima kahe, use das ghulamon ko azaad karne ke barabar sawab milta hai."
+    },
+    {
+      "id": "dhikr-007",
+      "topic": "dhikr",
+      "book": "muslim",
+      "number": "2698",
+      "grade": "sahih",
+      "arabic": "يُسَبِّحُ مِائَةَ تَسْبِيحَةٍ فَيُكْتَبُ لَهُ أَلْفُ حَسَنَةٍ أَوْ يُحَطُّ عَنْهُ أَلْفُ خَطِيئَةٍ",
+      "urdu_tarjuma": "Kya tum mein se koi rozana hazaar nekiyan kamane se aajiz hai? Sau martaba tasbih parhe to hazaar nekiyan likhi jati hain ya hazaar gunah mita diye jate hain."
+    },
+    {
+      "id": "dhikr-008",
+      "topic": "dhikr",
+      "book": "tirmidhi",
+      "number": "3383",
+      "grade": "hasan",
+      "arabic": "‏ أَفْضَلُ الذِّكْرِ لاَ إِلَهَ إِلاَّ اللَّهُ وَأَفْضَلُ الدُّعَاءِ الْحَمْدُ لِلَّهِ ‏",
+      "urdu_tarjuma": "Sab se afzal zikr 'La ilaha illa Allah' hai aur sab se afzal dua 'Alhamdulillah' hai."
+    },
+    {
+      "id": "dhikr-009",
+      "topic": "dhikr",
+      "book": "muslim",
+      "number": "2676",
+      "grade": "sahih",
+      "arabic": "سِيرُوا هَذَا جُمْدَانُ سَبَقَ الْمُفَرِّدُونَ",
+      "urdu_tarjuma": "Allah ko kasrat se yaad karne wale mard aur aurtein (neki mein) sab se aage nikal gaye."
+    },
+    {
+      "id": "dhikr-010",
+      "topic": "dhikr",
+      "book": "abudawud",
+      "number": "1522",
+      "grade": "sahih",
+      "arabic": "‏ أُوصِيكَ يَا مُعَاذُ لاَ تَدَعَنَّ فِي دُبُرِ كُلِّ صَلاَةٍ تَقُولُ اللَّهُمَّ أَعِنِّي عَلَى ذِكْرِكَ وَشُكْرِكَ وَحُسْنِ عِبَادَتِكَ ‏",
+      "urdu_tarjuma": "Aye Mu'adh! Allah ki qasam main tum se mohabbat karta hun; har namaz ke baad ye dua na chhorna: Aye Allah! Apne zikr, shukr aur achi ibadat mein meri madad farma."
+    },
+    {
+      "id": "dhikr-011",
+      "topic": "dhikr",
+      "book": "bukhari",
+      "number": "7405",
+      "grade": "sahih",
+      "arabic": "‏ يَقُولُ اللَّهُ تَعَالَى أَنَا عِنْدَ ظَنِّ عَبْدِي بِي، وَأَنَا مَعَهُ إِذَا ذَكَرَنِي، فَإِنْ ذَكَرَنِي فِي نَفْسِهِ ذَكَرْتُهُ فِي نَفْسِي، وَإِنْ ذَكَرَنِي فِي مَلأٍ ذَكَرْتُهُ فِي مَلأٍ خَيْرٍ مِنْهُمْ، وَإِنْ تَقَرَّبَ إِلَىَّ بِشِبْرٍ تَقَرَّبْتُ إِلَيْهِ ذِرَاعًا، وَإِنْ تَقَرَّبَ إِلَىَّ ذِرَاعًا تَقَرَّبْتُ إِلَيْهِ بَاعًا، وَإِنْ أَتَانِي يَمْشِي أَتَيْتُهُ هَرْوَلَةً ‏",
+      "urdu_tarjuma": "(Allah farmata hai:) Main apne bande ke gumaan ke mutabiq hun, aur jab wo Mera zikr karta hai to Main uske saath hun."
+    },
+    {
+      "id": "dhikr-012",
+      "topic": "dhikr",
+      "book": "muslim",
+      "number": "2700",
+      "grade": "sahih",
+      "arabic": "لاَ يَقْعُدُ قَوْمٌ يَذْكُرُونَ اللَّهَ عَزَّ وَجَلَّ إِلاَّ حَفَّتْهُمُ الْمَلاَئِكَةُ وَغَشِيَتْهُمُ الرَّحْمَةُ وَنَزَلَتْ عَلَيْهِمُ السَّكِينَةُ وَذَكَرَهُمُ اللَّهُ فِيمَنْ عِنْدَهُ",
+      "urdu_tarjuma": "Jo log Allah ka zikr karne baithte hain, farishte unhein gher lete hain aur rehmat unhein dhaanp leti hai."
+    },
+    {
+      "id": "dhikr-013",
+      "topic": "dhikr",
+      "book": "bukhari",
+      "number": "6407",
+      "grade": "sahih",
+      "arabic": "‏ مَثَلُ الَّذِي يَذْكُرُ رَبَّهُ وَالَّذِي لاَ يَذْكُرُ مَثَلُ الْحَىِّ وَالْمَيِّتِ ‏",
+      "urdu_tarjuma": "Jo apne Rab ka zikr karta hai aur jo nahi karta, unki misaal zinda aur murda ki si hai."
+    },
+    {
+      "id": "dhikr-014",
+      "topic": "dhikr",
+      "book": "bukhari",
+      "number": "6502",
+      "grade": "sahih",
+      "arabic": "‏ إِنَّ اللَّهَ قَالَ مَنْ عَادَى لِي وَلِيًّا فَقَدْ آذَنْتُهُ بِالْحَرْبِ، وَمَا تَقَرَّبَ إِلَىَّ عَبْدِي بِشَىْءٍ أَحَبَّ إِلَىَّ مِمَّا افْتَرَضْتُ عَلَيْهِ، وَمَا يَزَالُ عَبْدِي يَتَقَرَّبُ إِلَىَّ بِالنَّوَافِلِ حَتَّى أُحِبَّهُ، فَإِذَا أَحْبَبْتُهُ كُنْتُ سَمْعَهُ الَّذِي يَسْمَعُ بِهِ، وَبَصَرَهُ الَّذِي يُبْصِرُ بِهِ، وَيَدَهُ الَّتِي يَبْطُشُ بِهَا وَرِجْلَهُ الَّتِي يَمْشِي بِهَا، وَإِنْ سَأَلَنِي لأُعْطِيَنَّهُ، وَلَئِنِ اسْتَعَاذَنِي لأُعِيذَنَّهُ، وَمَا تَرَدَّدْتُ عَنْ شَىْءٍ أَنَا فَاعِلُهُ تَرَدُّدِي عَنْ نَفْسِ الْمُؤْمِنِ، يَكْرَهُ الْمَوْتَ وَأَنَا أَكْرَهُ مَسَاءَتَهُ ‏",
+      "urdu_tarjuma": "(Allah farmata hai:) Jo Mere kisi wali se dushmani rakhe, Main uske khilaf elan-e-jang karta hun; aur Mera banda faraiz se zyada mehboob kisi cheez se Mera qurb hasil nahi karta."
+    },
+    {
+      "id": "dhikr-015",
+      "topic": "dhikr",
+      "book": "muslim",
+      "number": "2695",
+      "grade": "sahih",
+      "arabic": "لأَنْ أَقُولَ سُبْحَانَ اللَّهِ وَالْحَمْدُ لِلَّهِ وَلاَ إِلَهَ إِلاَّ اللَّهُ وَاللَّهُ أَكْبَرُ أَحَبُّ إِلَىَّ مِمَّا طَلَعَتْ عَلَيْهِ الشَّمْسُ",
+      "urdu_tarjuma": "Ye kehna mujhe har us cheez se zyada mehboob hai jis par suraj tulu hota hai: SubhanAllah, Alhamdulillah, La ilaha illa Allah, Allahu Akbar."
+    },
+    {
+      "id": "dua-001",
+      "topic": "dua",
+      "book": "tirmidhi",
+      "number": "3372",
+      "grade": "sahih",
+      "arabic": "‏ الدُّعَاءُ هُوَ الْعِبَادَةُ ‏",
+      "urdu_tarjuma": "Dua hi ibadat hai."
+    },
+    {
+      "id": "dua-002",
+      "topic": "dua",
+      "book": "tirmidhi",
+      "number": "3373",
+      "grade": "hasan",
+      "arabic": "‏ مَنْ لَمْ يَسْأَلِ اللَّهَ يَغْضَبْ عَلَيْهِ ‏",
+      "urdu_tarjuma": "Jo Allah se nahi mangta, Allah us par ghussa hota hai."
+    },
+    {
+      "id": "dua-003",
+      "topic": "dua",
+      "book": "muslim",
+      "number": "2733",
+      "grade": "sahih",
+      "arabic": "دَعْوَةُ الْمَرْءِ الْمُسْلِمِ لأَخِيهِ بِظَهْرِ الْغَيْبِ مُسْتَجَابَةٌ عِنْدَ رَأْسِهِ مَلَكٌ مُوَكَّلٌ كُلَّمَا دَعَا لأَخِيهِ بِخَيْرٍ قَالَ الْمَلَكُ الْمُوَكَّلُ بِهِ آمِينَ وَلَكَ بِمِثْلٍ",
+      "urdu_tarjuma": "Musalman ki apne bhai ke liye peeth peeche ki gayi dua qabool hoti hai."
+    },
+    {
+      "id": "dua-004",
+      "topic": "dua",
+      "book": "abudawud",
+      "number": "1488",
+      "grade": "sahih",
+      "arabic": "‏ إِنَّ رَبَّكُمْ تَبَارَكَ وَتَعَالَى حَيِيٌّ كَرِيمٌ يَسْتَحْيِي مِنْ عَبْدِهِ إِذَا رَفَعَ يَدَيْهِ إِلَيْهِ أَنْ يَرُدَّهُمَا صِفْرًا ‏",
+      "urdu_tarjuma": "Tumhara Rab bada haya-daar aur kareem hai; jab banda Uske aage haath uthata hai to Wo unhein khaali lautane se haya karta hai."
+    },
+    {
+      "id": "dua-005",
+      "topic": "dua",
+      "book": "bukhari",
+      "number": "6338",
+      "grade": "sahih",
+      "arabic": "‏ إِذَا دَعَا أَحَدُكُمْ فَلْيَعْزِمِ الْمَسْأَلَةَ، وَلاَ يَقُولَنَّ اللَّهُمَّ إِنْ شِئْتَ فَأَعْطِنِي‏.‏ فَإِنَّهُ لاَ مُسْتَكْرِهَ لَهُ ‏",
+      "urdu_tarjuma": "Jab tum mein se koi dua kare to poore yaqeen se mange, aur ye na kahe: Aye Allah! Agar Tu chahe to de."
+    },
+    {
+      "id": "dua-006",
+      "topic": "dua",
+      "book": "bukhari",
+      "number": "6369",
+      "grade": "sahih",
+      "arabic": "‏ اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْهَمِّ وَالْحَزَنِ، وَالْعَجْزِ وَالْكَسَلِ، وَالْجُبْنِ وَالْبُخْلِ، وَضَلَعِ الدَّيْنِ، وَغَلَبَةِ الرِّجَالِ ‏",
+      "urdu_tarjuma": "Aye Allah! Main fikr-o-gham, aajizi-o-susti, kanjoosi-o-buzdili, qarz ke bojh aur logon ke ghalbe se Teri panah mangta hun."
+    },
+    {
+      "id": "dua-007",
+      "topic": "dua",
+      "book": "tirmidhi",
+      "number": "3579",
+      "grade": "sahih",
+      "arabic": "‏ أَقْرَبُ مَا يَكُونُ الرَّبُّ مِنَ الْعَبْدِ فِي جَوْفِ اللَّيْلِ الآخِرِ فَإِنِ اسْتَطَعْتَ أَنْ تَكُونَ مِمَّنْ يَذْكُرُ اللَّهَ فِي تِلْكَ السَّاعَةِ فَكُنْ ‏",
+      "urdu_tarjuma": "Rab bande se sab se zyada qareeb raat ke aakhri hisse mein hota hai; agar tum us waqt Allah ka zikr karne walon mein se ho sako to ho jao."
+    },
+    {
+      "id": "dua-008",
+      "topic": "dua",
+      "book": "abudawud",
+      "number": "521",
+      "grade": "sahih",
+      "arabic": "‏ لاَ يُرَدُّ الدُّعَاءُ بَيْنَ الأَذَانِ وَالإِقَامَةِ ‏",
+      "urdu_tarjuma": "Azan aur iqamat ke darmiyan ki gayi dua radd nahi hoti."
+    },
+    {
+      "id": "dua-009",
+      "topic": "dua",
+      "book": "tirmidhi",
+      "number": "3573",
+      "grade": "hasan",
+      "arabic": "‏ مَا عَلَى الأَرْضِ مُسْلِمٌ يَدْعُو اللَّهَ بِدَعْوَةٍ إِلاَّ آتَاهُ اللَّهُ إِيَّاهَا أَوْ صَرَفَ عَنْهُ مِنَ السُّوءِ مِثْلَهَا مَا لَمْ يَدْعُ بِمَأْثَمٍ أَوْ قَطِيعَةِ رَحِمٍ ‏",
+      "urdu_tarjuma": "Jo musalman aisi dua kare jismein gunah ya qata-e-rehmi na ho, Allah use teen mein se ek zaroor ata karta hai."
+    },
+    {
+      "id": "dua-010",
+      "topic": "dua",
+      "book": "muslim",
+      "number": "2735",
+      "grade": "sahih",
+      "arabic": "يَقُولُ قَدْ دَعَوْتُ وَقَدْ دَعَوْتُ فَلَمْ أَرَ يَسْتَجِيبُ لِي فَيَسْتَحْسِرُ عِنْدَ ذَلِكَ وَيَدَعُ الدُّعَاءَ",
+      "urdu_tarjuma": "Bande ki dua qabool hoti rehti hai jab tak wo gunah ya qata-e-rehmi ki dua na kare aur jaldi na machaye."
+    },
+    {
+      "id": "extra-001",
+      "topic": "iman",
+      "book": "bukhari",
+      "number": "8",
+      "grade": "sahih",
+      "arabic": "‏ بُنِيَ الإِسْلاَمُ عَلَى خَمْسٍ شَهَادَةِ أَنْ لاَ إِلَهَ إِلاَّ اللَّهُ وَأَنَّ مُحَمَّدًا رَسُولُ اللَّهِ، وَإِقَامِ الصَّلاَةِ، وَإِيتَاءِ الزَّكَاةِ، وَالْحَجِّ، وَصَوْمِ رَمَضَانَ ‏",
+      "urdu_tarjuma": "Islam paanch cheezon par qaim hai: gawahi ke Allah ke siwa koi mabood nahi aur Muhammad Allah ke Rasool hain, namaz qaim karna, zakat dena, Hajj karna aur Ramazan ke roze rakhna."
+    },
+    {
+      "id": "extra-002",
+      "topic": "iman",
+      "book": "bukhari",
+      "number": "16",
+      "grade": "sahih",
+      "arabic": "‏ ثَلاَثٌ مَنْ كُنَّ فِيهِ وَجَدَ حَلاَوَةَ الإِيمَانِ أَنْ يَكُونَ اللَّهُ وَرَسُولُهُ أَحَبَّ إِلَيْهِ مِمَّا سِوَاهُمَا، وَأَنْ يُحِبَّ الْمَرْءَ لاَ يُحِبُّهُ إِلاَّ لِلَّهِ، وَأَنْ يَكْرَهَ أَنْ يَعُودَ فِي الْكُفْرِ كَمَا يَكْرَهُ أَنْ يُقْذَفَ فِي النَّارِ ‏",
+      "urdu_tarjuma": "Teen khaslatein jisme hon usne iman ki mithaas pa li: Allah aur Uska Rasool use har cheez se zyada mehboob hon, kisi se mohabbat kare to sirf Allah ke liye kare, aur kufr ki taraf lautne ko aag mein phenke jane jaisa na-pasand kare."
+    },
+    {
+      "id": "extra-003",
+      "topic": "akhlaq",
+      "book": "bukhari",
+      "number": "48",
+      "grade": "sahih",
+      "arabic": "‏ سِبَابُ الْمُسْلِمِ فُسُوقٌ، وَقِتَالُهُ كُفْرٌ ‏",
+      "urdu_tarjuma": "Musalman ko gaali dena fisq (gunah) hai aur usse ladna kufr hai."
+    },
+    {
+      "id": "extra-004",
+      "topic": "akhlaq",
+      "book": "bukhari",
+      "number": "52",
+      "grade": "sahih",
+      "arabic": "‏ الْحَلاَلُ بَيِّنٌ وَالْحَرَامُ بَيِّنٌ، وَبَيْنَهُمَا مُشَبَّهَاتٌ لاَ يَعْلَمُهَا كَثِيرٌ مِنَ النَّاسِ، فَمَنِ اتَّقَى الْمُشَبَّهَاتِ اسْتَبْرَأَ لِدِيِنِهِ وَعِرْضِهِ، وَمَنْ وَقَعَ فِي الشُّبُهَاتِ كَرَاعٍ يَرْعَى حَوْلَ الْحِمَى، يُوشِكُ أَنْ يُوَاقِعَهُ‏.‏ أَلاَ وَإِنَّ لِكُلِّ مَلِكٍ حِمًى، أَلاَ إِنَّ حِمَى اللَّهِ فِي أَرْضِهِ مَحَارِمُهُ، أَلاَ وَإِنَّ فِي الْجَسَدِ مُضْغَةً إِذَا صَلَحَتْ صَلَحَ الْجَسَدُ كُلُّهُ، وَإِذَا فَسَدَتْ فَسَدَ الْجَسَدُ كُلُّهُ‏.‏ أَلاَ وَهِيَ الْقَلْبُ ‏",
+      "urdu_tarjuma": "Halal wazeh hai aur haram wazeh hai, aur in dono ke darmiyan kuch mushtabah cheezein hain jinhein aksar log nahi jante. Jo shak wali cheezon se bacha usne apne deen aur izzat ko bacha liya."
+    },
+    {
+      "id": "extra-006",
+      "topic": "akhlaq",
+      "book": "bukhari",
+      "number": "2444",
+      "grade": "sahih",
+      "arabic": "‏ انْصُرْ أَخَاكَ ظَالِمًا أَوْ مَظْلُومًا ‏",
+      "urdu_tarjuma": "Apne bhai ki madad karo, chahe wo zalim ho ya mazloom. (Zalim ki madad ye hai ke use zulm se roko.)"
+    },
+    {
+      "id": "extra-007",
+      "topic": "ilm",
+      "book": "bukhari",
+      "number": "3461",
+      "grade": "sahih",
+      "arabic": "‏ بَلِّغُوا عَنِّي وَلَوْ آيَةً، وَحَدِّثُوا عَنْ بَنِي إِسْرَائِيلَ وَلاَ حَرَجَ، وَمَنْ كَذَبَ عَلَىَّ مُتَعَمِّدًا فَلْيَتَبَوَّأْ مَقْعَدَهُ مِنَ النَّارِ ‏",
+      "urdu_tarjuma": "Meri taraf se pahunchao chahe ek aayat hi ho, aur Bani Israel se riwayat karo ismein koi harj nahi, aur jo mujh par jhoot bandhe wo apna thikana jahannum mein bana le."
+    },
+    {
+      "id": "extra-008",
+      "topic": "akhlaq",
+      "book": "bukhari",
+      "number": "5986",
+      "grade": "sahih",
+      "arabic": "‏ مَنْ أَحَبَّ أَنْ يُبْسَطَ لَهُ فِي رِزْقِهِ، وَيُنْسَأَ لَهُ فِي أَثَرِهِ، فَلْيَصِلْ رَحِمَهُ ‏",
+      "urdu_tarjuma": "Jo chahe ke uske rizq mein kushadgi ho aur uski umar mein barkat ho, use chahiye ke sila-rehmi kare."
+    },
+    {
+      "id": "extra-009",
+      "topic": "akhirah",
+      "book": "bukhari",
+      "number": "6412",
+      "grade": "sahih",
+      "arabic": "‏ نِعْمَتَانِ مَغْبُونٌ فِيهِمَا كَثِيرٌ مِنَ النَّاسِ، الصِّحَّةُ وَالْفَرَاغُ ‏",
+      "urdu_tarjuma": "Do ne'matein aisi hain jinmein aksar log dhoke mein hain: sehat aur fursat."
+    },
+    {
+      "id": "extra-010",
+      "topic": "akhirah",
+      "book": "bukhari",
+      "number": "7280",
+      "grade": "sahih",
+      "arabic": "كُلُّ أُمَّتِي يَدْخُلُونَ الْجَنَّةَ إِلاَّ مَنْ أَبَى، مَنْ أَطَاعَنِي دَخَلَ الْجَنَّةَ وَمَنْ عَصَانِي فَقَدْ أَبَى",
+      "urdu_tarjuma": "Meri tamam ummat Jannat mein dakhil hogi siwa uske jisne inkar kiya. Jisne meri itaat ki wo Jannat mein gaya, aur jisne meri nafarmani ki usne inkar kiya."
+    },
+    {
+      "id": "ilm-001",
+      "topic": "ilm",
+      "book": "bukhari",
+      "number": "71",
+      "grade": "sahih",
+      "arabic": "‏ مَنْ يُرِدِ اللَّهُ بِهِ خَيْرًا يُفَقِّهْهُ فِي الدِّينِ، وَإِنَّمَا أَنَا قَاسِمٌ وَاللَّهُ يُعْطِي، وَلَنْ تَزَالَ هَذِهِ الأُمَّةُ قَائِمَةً عَلَى أَمْرِ اللَّهِ لاَ يَضُرُّهُمْ مَنْ خَالَفَهُمْ حَتَّى يَأْتِيَ أَمْرُ اللَّهِ ‏",
+      "urdu_tarjuma": "Allah jis ke saath bhalai ka irada karta hai use deen ki samajh ata karta hai."
+    },
+    {
+      "id": "ilm-003",
+      "topic": "ilm",
+      "book": "bukhari",
+      "number": "100",
+      "grade": "sahih",
+      "arabic": "‏ إِنَّ اللَّهَ لاَ يَقْبِضُ الْعِلْمَ انْتِزَاعًا، يَنْتَزِعُهُ مِنَ الْعِبَادِ، وَلَكِنْ يَقْبِضُ الْعِلْمَ بِقَبْضِ الْعُلَمَاءِ، حَتَّى إِذَا لَمْ يُبْقِ عَالِمًا، اتَّخَذَ النَّاسُ رُءُوسًا جُهَّالاً فَسُئِلُوا، فَأَفْتَوْا بِغَيْرِ عِلْمٍ، فَضَلُّوا وَأَضَلُّوا ‏",
+      "urdu_tarjuma": "Allah ilm ko bandon se cheen kar nahi uthata, balke ulama ko utha kar ilm utha leta hai."
+    },
+    {
+      "id": "ilm-004",
+      "topic": "ilm",
+      "book": "muslim",
+      "number": "2674",
+      "grade": "sahih",
+      "arabic": "مَنْ دَعَا إِلَى هُدًى كَانَ لَهُ مِنَ الأَجْرِ مِثْلُ أُجُورِ مَنْ تَبِعَهُ لاَ يَنْقُصُ ذَلِكَ مِنْ أُجُورِهِمْ شَيْئًا وَمَنْ دَعَا إِلَى ضَلاَلَةٍ كَانَ عَلَيْهِ مِنَ الإِثْمِ مِثْلُ آثَامِ مَنْ تَبِعَهُ لاَ يَنْقُصُ ذَلِكَ مِنْ آثَامِهِمْ شَيْئًا",
+      "urdu_tarjuma": "Jo hidayat ki taraf bulaye, use un sab ke ajr ke barabar ajr milega jo uski pairvi karein."
+    },
+    {
+      "id": "ilm-005",
+      "topic": "ilm",
+      "book": "bukhari",
+      "number": "6491",
+      "grade": "sahih",
+      "arabic": "‏ إِنَّ اللَّهَ كَتَبَ الْحَسَنَاتِ وَالسَّيِّئَاتِ، ثُمَّ بَيَّنَ ذَلِكَ فَمَنْ هَمَّ بِحَسَنَةٍ فَلَمْ يَعْمَلْهَا كَتَبَهَا اللَّهُ لَهُ عِنْدَهُ حَسَنَةً كَامِلَةً، فَإِنْ هُوَ هَمَّ بِهَا فَعَمِلَهَا كَتَبَهَا اللَّهُ لَهُ عِنْدَهُ عَشْرَ حَسَنَاتٍ إِلَى سَبْعِمِائَةِ ضِعْفٍ إِلَى أَضْعَافٍ كَثِيرَةٍ، وَمَنْ هَمَّ بِسَيِّئَةٍ فَلَمْ يَعْمَلْهَا كَتَبَهَا اللَّهُ لَهُ عِنْدَهُ حَسَنَةً كَامِلَةً، فَإِنْ هُوَ هَمَّ بِهَا فَعَمِلَهَا كَتَبَهَا اللَّهُ لَهُ سَيِّئَةً وَاحِدَةً ‏",
+      "urdu_tarjuma": "(Allah farmata hai:) Jab Mera banda neki ka irada kare aur na kar sake to Main uske liye ek neki likhta hun; agar kar le to das likhta hun."
+    },
+    {
+      "id": "ilm-006",
+      "topic": "ilm",
+      "book": "muslim",
+      "number": "2581",
+      "grade": "sahih",
+      "arabic": "إِنَّ الْمُفْلِسَ مِنْ أُمَّتِي يَأْتِي يَوْمَ الْقِيَامَةِ بِصَلاَةٍ وَصِيَامٍ وَزَكَاةٍ وَيَأْتِي قَدْ شَتَمَ هَذَا وَقَذَفَ هَذَا وَأَكَلَ مَالَ هَذَا وَسَفَكَ دَمَ هَذَا وَضَرَبَ هَذَا فَيُعْطَى هَذَا مِنْ حَسَنَاتِهِ وَهَذَا مِنْ حَسَنَاتِهِ فَإِنْ فَنِيَتْ حَسَنَاتُهُ قَبْلَ أَنْ يُقْضَى مَا عَلَيْهِ أُخِذَ مِنْ خَطَايَاهُمْ فَطُرِحَتْ عَلَيْهِ ثُمَّ طُرِحَ فِي النَّارِ",
+      "urdu_tarjuma": "Jante ho muflis kaun hai? Muflis wo hai jo Qayamat ke din namaz, roza, zakat lekar aayega, lekin usne kisi ko gaali di hogi, kisi par tohmat lagai hogi."
+    },
+    {
+      "id": "ilm-007",
+      "topic": "ilm",
+      "book": "muslim",
+      "number": "2577",
+      "grade": "sahih",
+      "arabic": "يَا عِبَادِي إِنِّي حَرَّمْتُ الظُّلْمَ عَلَى نَفْسِي وَجَعَلْتُهُ بَيْنَكُمْ مُحَرَّمًا فَلاَ تَظَالَمُوا يَا عِبَادِي كُلُّكُمْ ضَالٌّ إِلاَّ مَنْ هَدَيْتُهُ فَاسْتَهْدُونِي أَهْدِكُمْ يَا عِبَادِي كُلُّكُمْ جَائِعٌ إِلاَّ مَنْ أَطْعَمْتُهُ فَاسْتَطْعِمُونِي أُطْعِمْكُمْ يَا عِبَادِي كُلُّكُمْ عَارٍ إِلاَّ مَنْ كَسَوْتُهُ فَاسْتَكْسُونِي أَكْسُكُمْ يَا عِبَادِي إِنَّكُمْ تُخْطِئُونَ بِاللَّيْلِ وَالنَّهَارِ وَأَنَا أَغْفِرُ الذُّنُوبَ جَمِيعًا فَاسْتَغْفِرُونِي أَغْفِرْ لَكُمْ يَا عِبَادِي إِنَّكُمْ لَنْ تَبْلُغُوا ضَرِّي فَتَضُرُّونِي وَلَنْ تَبْلُغُوا نَفْعِي فَتَنْفَعُونِي يَا عِبَادِي لَوْ أَنَّ أَوَّلَكُمْ وَآخِرَكُمْ وَإِنْسَكُمْ وَجِنَّكُمْ كَانُوا عَلَى أَتْقَى قَلْبِ رَجُلٍ وَاحِدٍ مِنْكُمْ مَا زَادَ ذَلِكَ فِي مُلْكِي شَيْئًا يَا عِبَادِي لَوْ أَنَّ أَوَّلَكُمْ وَآخِرَكُمْ وَإِنْسَكُمْ وَجِنَّكُمْ كَانُوا عَلَى أَفْجَرِ قَلْبِ رَجُلٍ وَاحِدٍ مَا نَقَصَ ذَلِكَ مِنْ مُلْكِي شَيْئًا يَا عِبَادِي لَوْ أَنَّ أَوَّلَكُمْ وَآخِرَكُمْ وَإِنْسَكُمْ وَجِنَّكُمْ قَامُوا فِي صَعِيدٍ وَاحِدٍ فَسَأَلُونِي فَأَعْطَيْتُ كُلَّ إِنْسَانٍ مَسْأَلَتَهُ مَا نَقَصَ ذَلِكَ مِمَّا عِنْدِي إِلاَّ كَمَا يَنْقُصُ الْمِخْيَطُ إِذَا أُدْخِلَ الْبَحْرَ يَا عِبَادِي إِنَّمَا هِيَ أَعْمَالُكُمْ أُحْصِيهَا لَكُمْ ثُمَّ أُوَفِّيكُمْ إِيَّاهَا فَمَنْ وَجَدَ خَيْرًا فَلْيَحْمَدِ اللَّهَ وَمَنْ وَجَدَ غَيْرَ ذَلِكَ فَلاَ يَلُومَنَّ إِلاَّ نَفْسَهُ",
+      "urdu_tarjuma": "(Allah farmata hai:) Aye Mere bando! Maine zulm ko apne upar haraam kiya aur tumhare darmiyan bhi haraam kiya, pas ek doosre par zulm na karo."
+    },
+    {
+      "id": "ilm-008",
+      "topic": "ilm",
+      "book": "bukhari",
+      "number": "5027",
+      "grade": "sahih",
+      "arabic": "‏ خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ ‏",
+      "urdu_tarjuma": "Tum mein se behtareen wo hai jo Quran seekhe aur sikhaye."
+    },
+    {
+      "id": "niyyah-001",
+      "topic": "niyyah",
+      "book": "bukhari",
+      "number": "1",
+      "grade": "sahih",
+      "arabic": "إِنَّمَا الْأَعْمَالُ بِالنِّيَّاتِ، وَإِنَّمَا لِكُلِّ امْرِئٍ مَا نَوَى، فَمَنْ كَانَتْ هِجْرَتُهُ إِلَى دُنْيَا يُصِيبُهَا أَوْ إِلَى امْرَأَةٍ يَنْكِحُهَا، فَهِجْرَتُهُ إِلَى مَا هَاجَرَ إِلَيْهِ",
+      "urdu_tarjuma": "Aamaal ka daromadar niyyaton par hai, aur har shakhs ke liye wahi hai jiski usne niyyat ki."
+    },
+    {
+      "id": "sabr-001",
+      "topic": "sabr",
+      "book": "bukhari",
+      "number": "5641",
+      "grade": "sahih",
+      "arabic": "‏ مَا يُصِيبُ الْمُسْلِمَ مِنْ نَصَبٍ وَلاَ وَصَبٍ وَلاَ هَمٍّ وَلاَ حُزْنٍ وَلاَ أَذًى وَلاَ غَمٍّ حَتَّى الشَّوْكَةِ يُشَاكُهَا، إِلاَّ كَفَّرَ اللَّهُ بِهَا مِنْ خَطَايَاهُ ‏",
+      "urdu_tarjuma": "Musalman ko jo thakan, beemari, fikr, gham, takleef ya ranj pohanchta hai, yahan tak ke kanta chubhna bhi, Allah uske zariye uske gunah mita deta hai."
+    },
+    {
+      "id": "sabr-002",
+      "topic": "sabr",
+      "book": "muslim",
+      "number": "2999",
+      "grade": "sahih",
+      "arabic": "عَجَبًا لأَمْرِ الْمُؤْمِنِ إِنَّ أَمْرَهُ كُلَّهُ خَيْرٌ وَلَيْسَ ذَاكَ لأَحَدٍ إِلاَّ لِلْمُؤْمِنِ إِنْ أَصَابَتْهُ سَرَّاءُ شَكَرَ فَكَانَ خَيْرًا لَهُ وَإِنْ أَصَابَتْهُ ضَرَّاءُ صَبَرَ فَكَانَ خَيْرًا لَهُ",
+      "urdu_tarjuma": "Momin ka maamla ajeeb hai, uska har kaam uske liye behtar hai: khushi mile to shukr karta hai jo uske liye behtar hai, takleef aaye to sabr karta hai jo uske liye behtar hai."
+    },
+    {
+      "id": "sabr-003",
+      "topic": "sabr",
+      "book": "bukhari",
+      "number": "1283",
+      "grade": "sahih",
+      "arabic": "‏ إِنَّمَا الصَّبْرُ عِنْدَ الصَّدْمَةِ الأُولَى ‏",
+      "urdu_tarjuma": "Sabr to pehle sadme ke waqt hota hai."
+    },
+    {
+      "id": "sabr-004",
+      "topic": "sabr",
+      "book": "tirmidhi",
+      "number": "2396",
+      "grade": "hasan",
+      "arabic": "‏ إِذَا أَرَادَ اللَّهُ بِعَبْدِهِ الْخَيْرَ عَجَّلَ لَهُ الْعُقُوبَةَ فِي الدُّنْيَا وَإِذَا أَرَادَ اللَّهُ بِعَبْدِهِ الشَّرَّ أَمْسَكَ عَنْهُ بِذَنْبِهِ حَتَّى يُوَفَّى بِهِ يَوْمَ الْقِيَامَةِ ‏",
+      "urdu_tarjuma": "Beshak bada ajr badi aazmaish ke saath hai, aur Allah jab kisi qaum se mohabbat karta hai to use aazmata hai."
+    },
+    {
+      "id": "sabr-005",
+      "topic": "sabr",
+      "book": "bukhari",
+      "number": "1469",
+      "grade": "sahih",
+      "arabic": "‏ مَا يَكُونُ عِنْدِي مِنْ خَيْرٍ فَلَنْ أَدَّخِرَهُ عَنْكُمْ، وَمَنْ يَسْتَعْفِفْ يُعِفَّهُ اللَّهُ، وَمَنْ يَسْتَغْنِ يُغْنِهِ اللَّهُ، وَمَنْ يَتَصَبَّرْ يُصَبِّرْهُ اللَّهُ، وَمَا أُعْطِيَ أَحَدٌ عَطَاءً خَيْرًا وَأَوْسَعَ مِنَ الصَّبْرِ ‏",
+      "urdu_tarjuma": "Jo sabr ikhtiyar karta hai Allah use sabr ata karta hai, aur sabr se behtar aur kushada koi atiya kisi ko nahi diya gaya."
+    },
+    {
+      "id": "sabr-006",
+      "topic": "sabr",
+      "book": "muslim",
+      "number": "223",
+      "grade": "sahih",
+      "arabic": "الطُّهُورُ شَطْرُ الإِيمَانِ وَالْحَمْدُ لِلَّهِ تَمْلأُ الْمِيزَانَ . وَسُبْحَانَ اللَّهِ وَالْحَمْدُ لِلَّهِ تَمْلآنِ - أَوْ تَمْلأُ - مَا بَيْنَ السَّمَوَاتِ وَالأَرْضِ وَالصَّلاَةُ نُورٌ وَالصَّدَقَةُ بُرْهَانٌ وَالصَّبْرُ ضِيَاءٌ وَالْقُرْآنُ حُجَّةٌ لَكَ أَوْ عَلَيْكَ كُلُّ النَّاسِ يَغْدُو فَبَائِعٌ نَفْسَهُ فَمُعْتِقُهَا أَوْ مُوبِقُهَا",
+      "urdu_tarjuma": "Aur sabr roshni hai."
+    },
+    {
+      "id": "sabr-007",
+      "topic": "sabr",
+      "book": "bukhari",
+      "number": "6424",
+      "grade": "sahih",
+      "arabic": "‏ يَقُولُ اللَّهُ تَعَالَى مَا لِعَبْدِي الْمُؤْمِنِ عِنْدِي جَزَاءٌ، إِذَا قَبَضْتُ صَفِيَّهُ مِنْ أَهْلِ الدُّنْيَا، ثُمَّ احْتَسَبَهُ إِلاَّ الْجَنَّةُ ‏",
+      "urdu_tarjuma": "(Allah farmata hai:) Mere momin bande ka, jab Main uska duniya ka mehboob le lun aur wo sabr kare, Mere paas Jannat ke siwa koi badla nahi."
+    },
+    {
+      "id": "sabr-008",
+      "topic": "sabr",
+      "book": "tirmidhi",
+      "number": "2398",
+      "grade": "hasan",
+      "arabic": "‏ الأَنْبِيَاءُ ثُمَّ الأَمْثَلُ فَالأَمْثَلُ فَيُبْتَلَى الرَّجُلُ عَلَى حَسَبِ دِينِهِ فَإِنْ كَانَ دِينُهُ صُلْبًا اشْتَدَّ بَلاَؤُهُ وَإِنْ كَانَ فِي دِينِهِ رِقَّةٌ ابْتُلِيَ عَلَى حَسَبِ دِينِهِ فَمَا يَبْرَحُ الْبَلاَءُ بِالْعَبْدِ حَتَّى يَتْرُكَهُ يَمْشِي عَلَى الأَرْضِ مَا عَلَيْهِ خَطِيئَةٌ ‏",
+      "urdu_tarjuma": "Sab se sakht aazmaish ambiya ki hoti hai, phir unke baad jo un se zyada qareeb hon."
+    },
+    {
+      "id": "salah-001",
+      "topic": "salah",
+      "book": "bukhari",
+      "number": "528",
+      "grade": "sahih",
+      "arabic": "‏ أَرَأَيْتُمْ لَوْ أَنَّ نَهَرًا بِبَابِ أَحَدِكُمْ، يَغْتَسِلُ فِيهِ كُلَّ يَوْمٍ خَمْسًا، مَا تَقُولُ ذَلِكَ يُبْقِي مِنْ دَرَنِهِ ‏",
+      "urdu_tarjuma": "Batao, agar tum mein se kisi ke darwaze par neher ho aur wo roz paanch martaba us mein ghusl kare to kya us par kuch mail baqi rahega? Paanch namazein aisi hi hain, Allah un se gunah mita deta hai."
+    },
+    {
+      "id": "salah-002",
+      "topic": "salah",
+      "book": "muslim",
+      "number": "657",
+      "grade": "sahih",
+      "arabic": "مَنْ صَلَّى الصُّبْحَ فَهُوَ فِي ذِمَّةِ اللَّهِ فَلاَ يَطْلُبَنَّكُمُ اللَّهُ مِنْ ذِمَّتِهِ بِشَىْءٍ فَيُدْرِكَهُ فَيَكُبَّهُ فِي نَارِ جَهَنَّمَ",
+      "urdu_tarjuma": "Jo Fajr ki namaz parhe, wo Allah ki hifazat mein hota hai."
+    },
+    {
+      "id": "salah-003",
+      "topic": "salah",
+      "book": "bukhari",
+      "number": "574",
+      "grade": "sahih",
+      "arabic": "‏ مَنْ صَلَّى الْبَرْدَيْنِ دَخَلَ الْجَنَّةَ ‏",
+      "urdu_tarjuma": "Jo (Fajr aur Asr) thandi namazein parhe, Jannat mein dakhil hoga."
+    },
+    {
+      "id": "salah-004",
+      "topic": "salah",
+      "book": "muslim",
+      "number": "651",
+      "grade": "sahih",
+      "arabic": "إِنَّ أَثْقَلَ صَلاَةٍ عَلَى الْمُنَافِقِينَ صَلاَةُ الْعِشَاءِ وَصَلاَةُ الْفَجْرِ وَلَوْ يَعْلَمُونَ مَا فِيهِمَا لأَتَوْهُمَا وَلَوْ حَبْوًا وَلَقَدْ هَمَمْتُ أَنْ آمُرَ بِالصَّلاَةِ فَتُقَامَ ثُمَّ آمُرَ رَجُلاً فَيُصَلِّيَ بِالنَّاسِ ثُمَّ أَنْطَلِقَ مَعِي بِرِجَالٍ مَعَهُمْ حُزَمٌ مِنْ حَطَبٍ إِلَى قَوْمٍ لاَ يَشْهَدُونَ الصَّلاَةَ فَأُحَرِّقَ عَلَيْهِمْ بُيُوتَهُمْ بِالنَّارِ",
+      "urdu_tarjuma": "Munafiqon par sab se bhari namazein Isha aur Fajr hain."
+    },
+    {
+      "id": "salah-005",
+      "topic": "salah",
+      "book": "bukhari",
+      "number": "555",
+      "grade": "sahih",
+      "arabic": "‏ يَتَعَاقَبُونَ فِيكُمْ مَلاَئِكَةٌ بِاللَّيْلِ وَمَلاَئِكَةٌ بِالنَّهَارِ، وَيَجْتَمِعُونَ فِي صَلاَةِ الْفَجْرِ وَصَلاَةِ الْعَصْرِ، ثُمَّ يَعْرُجُ الَّذِينَ بَاتُوا فِيكُمْ، فَيَسْأَلُهُمْ وَهْوَ أَعْلَمُ بِهِمْ كَيْفَ تَرَكْتُمْ عِبَادِي فَيَقُولُونَ تَرَكْنَاهُمْ وَهُمْ يُصَلُّونَ، وَأَتَيْنَاهُمْ وَهُمْ يُصَلُّونَ ‏",
+      "urdu_tarjuma": "Tum mein raat aur din ke farishte baari baari aate hain aur Fajr aur Asr ki namaz mein ikatthe hote hain."
+    },
+    {
+      "id": "salah-006",
+      "topic": "salah",
+      "book": "tirmidhi",
+      "number": "223",
+      "grade": "sahih",
+      "arabic": "‏ بَشِّرِ الْمَشَّائِينَ فِي الظُّلَمِ إِلَى الْمَسَاجِدِ بِالنُّورِ التَّامِّ يَوْمَ الْقِيَامَةِ ‏",
+      "urdu_tarjuma": "Andheron mein masjidon ki taraf chalne walon ko Qayamat ke din kaamil noor ki basharat do."
+    },
+    {
+      "id": "salah-007",
+      "topic": "salah",
+      "book": "bukhari",
+      "number": "662",
+      "grade": "sahih",
+      "arabic": "‏ مَنْ غَدَا إِلَى الْمَسْجِدِ وَرَاحَ أَعَدَّ اللَّهُ لَهُ نُزُلَهُ مِنَ الْجَنَّةِ كُلَّمَا غَدَا أَوْ رَاحَ ‏",
+      "urdu_tarjuma": "Jo subah ya shaam masjid jaye, Allah uske liye Jannat mein mehmani tayyar karta hai, jab bhi wo jaye."
+    },
+    {
+      "id": "salah-008",
+      "topic": "salah",
+      "book": "bukhari",
+      "number": "645",
+      "grade": "sahih",
+      "arabic": "‏ صَلاَةُ الْجَمَاعَةِ تَفْضُلُ صَلاَةَ الْفَذِّ بِسَبْعٍ وَعِشْرِينَ دَرَجَةً ‏",
+      "urdu_tarjuma": "Jamaat ki namaz akele ki namaz se sattais darje afzal hai."
+    },
+    {
+      "id": "salah-009",
+      "topic": "salah",
+      "book": "muslim",
+      "number": "233",
+      "grade": "sahih",
+      "arabic": "الصَّلَوَاتُ الْخَمْسُ وَالْجُمُعَةُ إِلَى الْجُمُعَةِ كَفَّارَاتٌ لِمَا بَيْنَهُنَّ",
+      "urdu_tarjuma": "Paanch namazein aur ek Jumuah se doosre Jumuah tak, darmiyani gunahon ka kaffara hain jab tak kabeera gunahon se bacha jaye."
+    },
+    {
+      "id": "salah-010",
+      "topic": "salah",
+      "book": "bukhari",
+      "number": "1145",
+      "grade": "sahih",
+      "arabic": "‏ يَنْزِلُ رَبُّنَا تَبَارَكَ وَتَعَالَى كُلَّ لَيْلَةٍ إِلَى السَّمَاءِ الدُّنْيَا حِينَ يَبْقَى ثُلُثُ اللَّيْلِ الآخِرُ يَقُولُ مَنْ يَدْعُونِي فَأَسْتَجِيبَ لَهُ مَنْ يَسْأَلُنِي فَأُعْطِيَهُ مَنْ يَسْتَغْفِرُنِي فَأَغْفِرَ لَهُ ‏",
+      "urdu_tarjuma": "Hamara Rab har raat aasman-e-duniya par nuzool farmata hai jab raat ka aakhri teesra hissa baqi hota hai, aur farmata hai: Kaun hai jo Mujhe pukare to Main uski sunun."
+    },
+    {
+      "id": "salah-011",
+      "topic": "salah",
+      "book": "muslim",
+      "number": "1163",
+      "grade": "sahih",
+      "arabic": "أَفْضَلُ الصِّيَامِ بَعْدَ رَمَضَانَ شَهْرُ اللَّهِ الْمُحَرَّمُ وَأَفْضَلُ الصَّلاَةِ بَعْدَ الْفَرِيضَةِ صَلاَةُ اللَّيْلِ",
+      "urdu_tarjuma": "Farz namaz ke baad sab se afzal namaz raat ki namaz (tahajjud) hai."
+    },
+    {
+      "id": "salah-012",
+      "topic": "salah",
+      "book": "tirmidhi",
+      "number": "413",
+      "grade": "hasan",
+      "arabic": "‏ إِنَّ أَوَّلَ مَا يُحَاسَبُ بِهِ الْعَبْدُ يَوْمَ الْقِيَامَةِ مِنْ عَمَلِهِ صَلاَتُهُ فَإِنْ صَلُحَتْ فَقَدْ أَفْلَحَ وَأَنْجَحَ وَإِنْ فَسَدَتْ فَقَدْ خَابَ وَخَسِرَ فَإِنِ انْتَقَصَ مِنْ فَرِيضَتِهِ شَيْءٌ قَالَ الرَّبُّ عَزَّ وَجَلَّ انْظُرُوا هَلْ لِعَبْدِي مِنْ تَطَوُّعٍ فَيُكَمَّلَ بِهَا مَا انْتَقَصَ مِنَ الْفَرِيضَةِ ثُمَّ يَكُونُ سَائِرُ عَمَلِهِ عَلَى ذَلِكَ ‏",
+      "urdu_tarjuma": "Qayamat ke din bande se sab se pehle uski namaz ka hisaab liya jayega."
+    },
+    {
+      "id": "salah-013",
+      "topic": "salah",
+      "book": "bukhari",
+      "number": "553",
+      "grade": "sahih",
+      "arabic": "‏ مَنْ تَرَكَ صَلاَةَ الْعَصْرِ فَقَدْ حَبِطَ عَمَلُهُ ‏",
+      "urdu_tarjuma": "Jis ne Asr ki namaz chhor di, uska amal zaaya ho gaya."
+    },
+    {
+      "id": "salah-014",
+      "topic": "salah",
+      "book": "muslim",
+      "number": "82",
+      "grade": "sahih",
+      "arabic": "إِنَّ بَيْنَ الرَّجُلِ وَبَيْنَ الشِّرْكِ وَالْكُفْرِ تَرْكَ الصَّلاَةِ",
+      "urdu_tarjuma": "Aadmi ke aur shirk-o-kufr ke darmiyan (farq) namaz ka chhorna hai."
+    },
+    {
+      "id": "salah-015",
+      "topic": "salah",
+      "book": "muslim",
+      "number": "482",
+      "grade": "sahih",
+      "arabic": "أَقْرَبُ مَا يَكُونُ الْعَبْدُ مِنْ رَبِّهِ وَهُوَ سَاجِدٌ فَأَكْثِرُوا الدُّعَاءَ",
+      "urdu_tarjuma": "Banda apne Rab se sab se zyada qareeb sajde ki halat mein hota hai, pas (sajde mein) kasrat se dua karo."
+    },
+    {
+      "id": "shukr-001",
+      "topic": "shukr",
+      "book": "abudawud",
+      "number": "4811",
+      "grade": "sahih",
+      "arabic": "‏ لاَ يَشْكُرُ اللَّهَ مَنْ لاَ يَشْكُرُ النَّاسَ ‏",
+      "urdu_tarjuma": "Jo logon ka shukr ada nahi karta, wo Allah ka shukr bhi ada nahi karta."
+    },
+    {
+      "id": "shukr-002",
+      "topic": "shukr",
+      "book": "muslim",
+      "number": "2734",
+      "grade": "sahih",
+      "arabic": "إِنَّ اللَّهَ لَيَرْضَى عَنِ الْعَبْدِ أَنْ يَأْكُلَ الأَكْلَةَ فَيَحْمَدَهُ عَلَيْهَا أَوْ يَشْرَبَ الشَّرْبَةَ فَيَحْمَدَهُ عَلَيْهَا",
+      "urdu_tarjuma": "Allah apne bande se raazi hota hai jab wo khana kha kar ya paani pi kar Uska shukr ada karta hai."
+    },
+    {
+      "id": "shukr-003",
+      "topic": "shukr",
+      "book": "tirmidhi",
+      "number": "2819",
+      "grade": "hasan",
+      "arabic": "‏ إِنَّ اللَّهَ يُحِبَّ أَنْ يُرَى أَثَرُ نِعْمَتِهِ عَلَى عَبْدِهِ ‏",
+      "urdu_tarjuma": "Beshak Allah pasand karta hai ke uski nemat ka asar uske bande par nazar aaye."
+    },
+    {
+      "id": "shukr-004",
+      "topic": "shukr",
+      "book": "tirmidhi",
+      "number": "2346",
+      "grade": "hasan",
+      "arabic": "ا حَدَّثَنَا مَرْوَانُ بْنُ مُعَاوِيَةَ حَدَّثَنَا عَبْدُ الرَّحْمَنِ بْنُ أَبِي شُمَيْلَةَ الْأَنْصَارِيُّ عَنْ سَلَمَةَ بْنِ عُبَيْدِ اللَّهِ بْنِ مِحْصَنٍ الْخَطْمِيِّ عَنْ أَبِيهِ وَكَانَتْ لَهُ صُحْبَةٌ قَالَ قَالَ رَسُولُ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ مَنْ أَصْبَحَ مِنْكُمْ آمِنًا فِي سِرْبِهِ مُعَافًى فِي جَسَدِهِ عِنْدَهُ قُوتُ يَوْمِهِ فَكَأَنَّمَا حِيزَتْ لَهُ الدُّنْيَا قَالَ أَبُو عِيسَى هَذَا حَدِيثٌ حَسَنٌ غَرِيبٌ لَا نَعْرِفُهُ إِلَّا مِنْ حَدِيثِ مَرْوَانَ بْنِ مُعَاو",
+      "urdu_tarjuma": "Tum mein se jo subah apne ghar mein aman se, jism mein sehat se uthe aur uske paas din bhar ka khana ho, goya uske liye poori duniya samet di gayi."
+    },
+    {
+      "id": "shukr-005",
+      "topic": "shukr",
+      "book": "abudawud",
+      "number": "2774",
+      "grade": "sahih",
+      "arabic": "حَدَّثَنَا مَخْلَدُ بْنُ خَالِدٍ، حَدَّثَنَا أَبُو عَاصِمٍ، عَنْ أَبِي بَكْرَةَ، بَكَّارِ بْنِ عَبْدِ الْعَزِيزِ أَخْبَرَنِي أَبِي عَبْدُ الْعَزِيزِ، عَنْ أَبِي بَكْرَةَ، عَنِ النَّبِيِّ صلى الله عليه وسلم أَنَّهُ كَانَ إِذَا جَاءَهُ أَمْرُ سُرُورٍ أَوْ بُشِّرَ بِهِ خَرَّ سَاجِدًا شَاكِرًا لِلَّهِ ‏.‏",
+      "urdu_tarjuma": "Nabi ﷺ ke paas jab koi khushi ki khabar aati to sajde mein gir jate (shukr ka sajda karte)."
+    },
+    {
+      "id": "tawba-001",
+      "topic": "tawba",
+      "book": "bukhari",
+      "number": "6306",
+      "grade": "sahih",
+      "arabic": "سَيِّدُ الاِسْتِغْفَارِ أَنْ تَقُولَ: اللَّهُمَّ أَنْتَ رَبِّي، لاَ إِلَهَ إِلاَّ أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ، وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ وَأَبُوءُ لَكَ بِذَنْبِي، فَاغْفِرْ لِي، فَإِنَّهُ لاَ يَغْفِرُ الذُّنُوبَ إِلاَّ أَنْتَ",
+      "urdu_tarjuma": "Sayyid-ul-Istighfar (istighfar ka sardar) ye hai ke tum kaho: Aye Allah! Tu mera Rab hai, Tere siwa koi mabood nahi, Tune mujhe paida kiya aur main Tera banda hun, aur main apni taqat ke mutabiq Tere ahd aur wade par qaim hun. Main apne kiye ke shar se Teri panah mangta hun, main Tere ehsan ka iqrar karta hun aur apne gunah ka iqrar karta hun, pas mujhe bakhsh de, kyunke Tere siwa gunah koi nahi bakhshta."
+    },
+    {
+      "id": "tawba-002",
+      "topic": "tawba",
+      "book": "muslim",
+      "number": "2749",
+      "grade": "sahih",
+      "arabic": "وَالَّذِي نَفْسِي بِيَدِهِ لَوْ لَمْ تُذْنِبُوا لَذَهَبَ اللَّهُ بِكُمْ وَلَجَاءَ بِقَوْمٍ يُذْنِبُونَ فَيَسْتَغْفِرُونَ اللَّهَ فَيَغْفِرُ لَهُمْ",
+      "urdu_tarjuma": "Qasam us zaat ki jiske haath mein meri jaan hai! Agar tum gunah na karte to Allah tumhein le jata aur aisi qaum lata jo gunah karti phir Allah se bakhshish mangti to Wo unhein bakhsh deta."
+    },
+    {
+      "id": "tawba-003",
+      "topic": "tawba",
+      "book": "muslim",
+      "number": "2759",
+      "grade": "sahih",
+      "arabic": "إِنَّ اللَّهَ عَزَّ وَجَلَّ يَبْسُطُ يَدَهُ بِاللَّيْلِ لِيَتُوبَ مُسِيءُ النَّهَارِ وَيَبْسُطُ يَدَهُ بِالنَّهَارِ لِيَتُوبَ مُسِيءُ اللَّيْلِ حَتَّى تَطْلُعَ الشَّمْسُ مِنْ مَغْرِبِهَا",
+      "urdu_tarjuma": "Allah raat ko apna haath phailata hai taake din ko gunah karne wala toba kare, aur din ko haath phailata hai taake raat ko gunah karne wala toba kare."
+    },
+    {
+      "id": "tawba-004",
+      "topic": "tawba",
+      "book": "muslim",
+      "number": "2703",
+      "grade": "sahih",
+      "arabic": "مَنْ تَابَ قَبْلَ أَنْ تَطْلُعَ الشَّمْسُ مِنْ مَغْرِبِهَا تَابَ اللَّهُ عَلَيْهِ",
+      "urdu_tarjuma": "Jo shakhs suraj ke maghrib se nikalne se pehle toba kar le, Allah uski toba qabool farmata hai."
+    },
+    {
+      "id": "tawba-006",
+      "topic": "tawba",
+      "book": "tirmidhi",
+      "number": "3540",
+      "grade": "hasan",
+      "arabic": "‏ قَالَ اللَّهُ يَا ابْنَ آدَمَ إِنَّكَ مَا دَعَوْتَنِي وَرَجَوْتَنِي غَفَرْتُ لَكَ عَلَى مَا كَانَ فِيكَ وَلاَ أُبَالِي يَا ابْنَ آدَمَ لَوْ بَلَغَتْ ذُنُوبُكَ عَنَانَ السَّمَاءِ ثُمَّ اسْتَغْفَرْتَنِي غَفَرْتُ لَكَ وَلاَ أُبَالِي يَا ابْنَ آدَمَ إِنَّكَ لَوْ أَتَيْتَنِي بِقُرَابِ الأَرْضِ خَطَايَا ثُمَّ لَقِيتَنِي لاَ تُشْرِكُ بِي شَيْئًا لأَتَيْتُكَ بِقُرَابِهَا مَغْفِرَةً ‏",
+      "urdu_tarjuma": "(Allah farmata hai:) Aye Adam ke bete! Jab tak tu Mujhe pukarta aur Mujh se ummeed rakhta rahega, Main tere gunah bakhshta rahunga, chahe kitne hi hon."
+    },
+    {
+      "id": "tawba-007",
+      "topic": "tawba",
+      "book": "muslim",
+      "number": "2747",
+      "grade": "sahih",
+      "arabic": "لَلَّهُ أَشَدُّ فَرَحًا بِتَوْبَةِ عَبْدِهِ حِينَ يَتُوبُ إِلَيْهِ مِنْ أَحَدِكُمْ كَانَ عَلَى رَاحِلَتِهِ بِأَرْضِ فَلاَةٍ فَانْفَلَتَتْ مِنْهُ وَعَلَيْهَا طَعَامُهُ وَشَرَابُهُ فَأَيِسَ مِنْهَا فَأَتَى شَجَرَةً فَاضْطَجَعَ فِي ظِلِّهَا قَدْ أَيِسَ مِنْ رَاحِلَتِهِ فَبَيْنَا هُوَ كَذَلِكَ إِذَا هُوَ بِهَا قَائِمَةً عِنْدَهُ فَأَخَذَ بِخِطَامِهَا ثُمَّ قَالَ مِنْ شِدَّةِ الْفَرَحِ اللَّهُمَّ أَنْتَ عَبْدِي وَأَنَا رَبُّكَ . أَخْطَأَ مِنْ شِدَّةِ الْفَرَحِ",
+      "urdu_tarjuma": "Allah apne bande ki toba par us shakhs se zyada khush hota hai jise (sehra mein) apni khoi hui sawari mil jaye."
+    },
+    {
+      "id": "tawba-008",
+      "topic": "tawba",
+      "book": "tirmidhi",
+      "number": "2499",
+      "grade": "hasan",
+      "arabic": "‏ كُلُّ ابْنِ آدَمَ خَطَّاءٌ وَخَيْرُ الْخَطَّائِينَ التَّوَّابُونَ ‏",
+      "urdu_tarjuma": "Adam ki tamam aulaad gunahgar hai, aur behtareen gunahgar wo hain jo toba karte hain."
+    },
+    {
+      "id": "tawba-009",
+      "topic": "tawba",
+      "book": "bukhari",
+      "number": "6307",
+      "grade": "sahih",
+      "arabic": "‏ وَاللَّهِ إِنِّي لأَسْتَغْفِرُ اللَّهَ وَأَتُوبُ إِلَيْهِ فِي الْيَوْمِ أَكْثَرَ مِنْ سَبْعِينَ مَرَّةً ‏",
+      "urdu_tarjuma": "Allah ki qasam! Main din mein sattar martaba se zyada Allah se istighfar karta hun aur Uski taraf ruju karta hun."
+    }
+  ]
+}
