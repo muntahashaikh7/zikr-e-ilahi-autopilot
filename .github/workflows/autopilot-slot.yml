@@ -1,0 +1,157 @@
+name: Autopilot Slot — build + all-platform publish
+
+# Fully autonomous. Zero AI tokens.
+# Runs 3x daily AT the publish slots — 07:00 / 13:00 / 20:00 PKT
+# (02:00 / 08:00 / 15:00 UTC). Each run:
+#   1. Picks the next entry for this slot's category (dhikr/akhlaq/dua)
+#      via rotation_state.json (no repeats until the category cycles)
+#   2. Builds one 1080x1920 reel + YouTube SEO + per-platform SEO
+#   3. Publishes a GitHub Release (public MP4 URL for IG/FB fetching)
+#   4. YouTube: full SEO, public immediately (we run AT slot time)
+#   5. Instagram: reel via Graph API (optimized caption + hashtags)
+#   6. Facebook: Page video via Graph API
+#   7. TikTok: placeholder until developer app approved
+#   8. Commits rotation_state.json back
+#
+# Repo MUST be PUBLIC (release assets are the public video URLs for IG/FB).
+# Required secrets: YT_CLIENT_ID, YT_CLIENT_SECRET, YT_REFRESH_TOKEN,
+#   IG_USER_ID, IG_TOKEN, FB_PAGE_ID, FB_PAGE_TOKEN.
+
+on:
+  schedule:
+    # 07:00 / 13:00 / 20:00 PKT = 02:00 / 08:00 / 15:00 UTC
+    - cron: "0 2,8,15 * * *"
+  workflow_dispatch:
+    inputs:
+      slot:
+        description: "Slot category override (dhikr / akhlaq / dua)"
+        required: false
+        type: choice
+        options: [dhikr, akhlaq, dua]
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install system deps
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg > /dev/null
+          sudo mkdir -p /usr/share/fonts/truetype/noto
+          sudo cp assets/fonts/NotoNaskhArabic-Bold.ttf /usr/share/fonts/truetype/noto/
+          mkdir -p out
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Python deps
+        run: pip install -q arabic_reshaper pillow edge-tts
+
+      - name: Pick entry for this slot
+        id: pick
+        run: |
+          python3 - << 'PYEOF'
+          import json, os
+          from datetime import datetime, timedelta, timezone
+          utc = datetime.now(timezone.utc)
+          pkt = utc + timedelta(hours=5)
+          slot_map = {2: "dhikr", 8: "akhlaq", 15: "dua"}
+          cat = os.environ.get("SLOT_OVERRIDE") or slot_map.get(utc.hour)
+          if not cat:
+              h = pkt.hour
+              cat = "dhikr" if h < 10 else ("akhlaq" if h < 16 else "dua")
+          state = json.load(open("rotation_state.json"))
+          bank = json.load(open("hadith_bank.json"))
+          cat_ids = [e["id"] for e in bank["entries"]
+                     if e["id"].split("-")[0] == cat
+                     and e["grade"] in ("sahih", "hasan")]
+          used = set(state["used_ids"])
+          avail = [i for i in cat_ids if i not in used]
+          if not avail:
+              state["used_ids"] = [u for u in state["used_ids"]
+                                   if not u.startswith(cat + "-")]
+              avail = cat_ids
+              print(f"category {cat} fully cycled - reset")
+          picked = avail[0]
+          state["used_ids"].append(picked)
+          state["category_last_used"][cat] = picked
+          state["last_batch_date"] = pkt.strftime("%F")
+          json.dump(state, open("rotation_state.json", "w"), indent=2)
+          slot_label = pkt.strftime("%H:%M")
+          with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+              f.write(f"entry={picked}\ncategory={cat}\nslot={slot_label}\n")
+          print(f"slot {slot_label} PKT -> {cat} -> {picked}")
+          PYEOF
+        env:
+          SLOT_OVERRIDE: ${{ inputs.slot }}
+
+      - name: Build reel (+ SEO)
+        run: python3 scripts/build_daily_video.py "${{ steps.pick.outputs.entry }}" "out/reel.mp4" "/tmp/b"
+
+      - name: Verify output
+        run: |
+          [ -f out/reel.mp4 ] && [ ! -L out/reel.mp4 ] || { echo "MISSING out/reel.mp4"; exit 1; }
+          ffprobe -v error -show_entries stream=codec_name,width,height -of csv out/reel.mp4
+
+      - name: Publish GitHub Release (public URL for IG/FB)
+        id: release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TAG="slot-$(date -u +%Y%m%d-%H%M)"
+          gh release create "$TAG" --title "Autopilot $TAG" \
+            --notes "${{ steps.pick.outputs.category }} ${{ steps.pick.outputs.entry }}" out/reel.mp4
+          echo "tag=$TAG" >> $GITHUB_OUTPUT
+          echo "url=https://github.com/${{ github.repository }}/releases/download/$TAG/reel.mp4" >> $GITHUB_OUTPUT
+
+      - name: Upload to YouTube (public now)
+        id: yt
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          ENTRY: ${{ steps.pick.outputs.entry }}
+        run: |
+          python3 scripts/upload_youtube.py out/reel.mp4 "out/seo-$ENTRY.json" | tee yt_out.txt
+          echo "url=$(grep -o 'https://www.youtube.com/watch?v=[^ ]*' yt_out.txt | head -1)" >> $GITHUB_OUTPUT
+
+      - name: Upload to Instagram + Facebook
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+          ENTRY: ${{ steps.pick.outputs.entry }}
+          VIDEO_URL: ${{ steps.release.outputs.url }}
+        run: |
+          IG_CAP=$(python3 -c "import json;print(json.load(open('out/mp-$ENTRY.json'))['platforms']['instagram']['caption'])")
+          FB_CAP=$(python3 -c "import json;print(json.load(open('out/mp-$ENTRY.json'))['platforms']['facebook']['caption'])")
+          FB_TITLE=$(python3 -c "import json;print(json.load(open('out/seo-$ENTRY.json'))['seo']['title'])")
+          echo "=== IG ==="
+          python3 scripts/upload_instagram.py "$VIDEO_URL" "$IG_CAP" | tee -a results.txt || echo "IG FAILED" | tee -a results.txt
+          echo "=== FB ==="
+          python3 scripts/upload_facebook.py --file-url "$VIDEO_URL" --title "$FB_TITLE" --description "$FB_CAP" | tee -a results.txt || echo "FB FAILED" | tee -a results.txt
+          echo "=== TikTok (pending app approval) ==="
+          python3 scripts/upload_tiktok.py | tee -a results.txt
+
+      - name: Commit rotation state
+        run: |
+          git config user.name "autopilot" && git config user.email "autopilot@zikr-e-ilahi"
+          git add rotation_state.json
+          git commit -m "rotation: ${{ steps.pick.outputs.slot }} PKT ${{ steps.pick.outputs.entry }}" || true
+          git push
+
+      - name: Summary
+        run: |
+          echo "## Autopilot ${{ steps.pick.outputs.slot }} PKT - ${{ steps.pick.outputs.entry }}" >> $GITHUB_STEP_SUMMARY
+          echo "YouTube: ${{ steps.yt.outputs.url }}" >> $GITHUB_STEP_SUMMARY
+          echo "Release: ${{ steps.release.outputs.url }}" >> $GITHUB_STEP_SUMMARY
+          cat results.txt >> $GITHUB_STEP_SUMMARY 2>/dev/null || true
