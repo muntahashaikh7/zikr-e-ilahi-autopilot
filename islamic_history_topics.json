@@ -1,0 +1,877 @@
+{
+ "meta": {
+  "created": "2026-10-11",
+  "note": "20 Islamic History topics. Topics with 'scripted': true have a full Urdu script in history_scripts/<id>.txt and are eligible for rotation. Others have verified facts + outline (script pending).",
+  "version": 1,
+  "topic_count": 20
+ },
+ "topics": [
+  {
+   "backgrounds": [
+    "hist-bg-desert-caravan.jpg",
+    "hist-bg-geometric-gold.jpg",
+    "hist-bg-jerusalem-dawn.jpg"
+   ],
+   "era": "570–622 CE",
+   "facts": {
+    "birth": "570 CE, 12 Rabi-ul-Awwal, Year of the Elephant (Aam-ul-Feel)",
+    "father": "Hazrat Abdullah (passed away before birth)",
+    "first_believers": "Khadija (R.A.) first, then Ali (R.A.), Abu Bakr (R.A.), Zaid bin Haritha (R.A.)",
+    "first_revelation": "610 CE, 27 Ramadan, Cave Hira, age 40 — Surah Al-Alaq first 5 verses via Jibreel (A.S.)",
+    "guardians": "Grandfather Abdul Muttalib (till age 8), then uncle Abu Talib",
+    "hijrat": "622 CE, 12 Rabi-ul-Awwal arrival at Quba",
+    "mother": "Hazrat Amina bint Wahb",
+    "nurse": "Hazrat Halima Saadia (Banu Saad tribe, ~4 years)",
+    "persecution_years": "613–622 CE public dawah with boycott (Shaib Abi Talib, 3 years)"
+   },
+   "id": "seerah-makki",
+   "outline": [
+    "Hook: 570 CE — the year elephants marched on Makkah and a child was born who would change history",
+    "Background: Arabia before Islam — tribal warfare, idol worship, buried daughters",
+    "Chapter 1: Blessed childhood — Halima's blessings, the splitting of the chest (Shaq-e-Sadr), Al-Ameen",
+    "Chapter 2: The Cave of Hira — first revelation, Khadija's comfort, Warqa bin Nawfal",
+    "Chapter 3: The call and the storm — public dawah, persecution, boycott, Year of Sorrow (619 CE)",
+    "Lessons: patience, character before claim, trust in Allah — closing dua"
+   ],
+   "scripted": true,
+   "seo": {
+    "description": "سیرت النبی ﷺ کا مکی دور — ولادت مبارکہ سے ہجرت مدینہ تک کا مکمل ایمان افروز واقعہ۔ غار حرا میں پہلی وحی، حضرت خدیجہ رضی اللہ عنہا کا ساتھ، اور کفار مکہ کے مظالم کے باوجود صبر کی عظیم مثال۔\n\nZikr-e-Ilahi کو سبسکرائب کریں اور اسلامی تاریخ کی مزید ویڈیوز دیکھیں۔\n\n#Seerah #سیرت_النبی #IslamicHistory #Makkah #ProphetMuhammad #ZikreIlahi",
+    "tags": [
+     "seerah",
+     "prophet muhammad",
+     "سیرت النبی",
+     "makkah",
+     "islamic history",
+     "hira cave",
+     "hijrat",
+     "zikr e ilahi",
+     "islam",
+     "muslim history",
+     "غار حرا",
+     "مکی دور",
+     "seerat un nabi",
+     "muhammad pbuh",
+     "islamic reminders"
+    ],
+    "title": "سیرت النبی ﷺ مکی دور | ولادت سے ہجرت تک مکمل واقعہ | Seerah of Prophet Muhammad PBUH"
+   },
+   "title_en": "Seerah of Prophet Muhammad (PBUH): The Makkan Period",
+   "title_urdu": "سیرت النبی ﷺ: مکی دور — ولادت سے ہجرت تک"
+  },
+  {
+   "backgrounds": [
+    "hist-bg-jerusalem-dawn.jpg",
+    "hist-bg-desert-caravan.jpg",
+    "hist-bg-geometric-gold.jpg"
+   ],
+   "era": "622–632 CE",
+   "facts": {
+    "badr": "17 Ramadan 2 AH / 13 March 624 CE — 313 vs ~1000",
+    "brotherhood": "Mawakhat between Muhajireen and Ansar",
+    "charter": "Misaq-e-Madinah — first written constitution",
+    "fatah_makkah": "20 Ramadan 8 AH / 11 January 630 CE — 10,000 Muslims, general amnesty",
+    "hajjatul_wida": "10 AH / 632 CE — farewell sermon at Arafat",
+    "hijrat": "622 CE (1 AH) — Quba, then Madinah; Masjid-e-Nabawi built",
+    "hudaybiyyah": "6 AH / 628 CE — treaty, 'manifest victory' (Fath-e-Mubeen)",
+    "khandaq": "5 AH / 627 CE — trench suggested by Salman Farsi (R.A.)",
+    "uhud": "3 AH / 625 CE",
+    "wisaal": "12 Rabi-ul-Awwal 11 AH / 632 CE — age 63, buried in his chamber"
+   },
+   "id": "seerah-madani",
+   "outline": [
+    "Hook: 622 CE — a city that opened its arms, and a community that would reshape the world",
+    "Background: Yathrib becomes Madinah — the mosque, the brotherhood, the charter",
+    "Chapter 1: Badr — 313 against a thousand, the day of criterion (Yawm-ul-Furqan)",
+    "Chapter 2: Trials — Uhud's lesson, Khandaq's trench, Hudaybiyyah's wisdom",
+    "Chapter 3: The bloodless conquest — Fatah-e-Makkah and the general amnesty",
+    "Lessons: leadership, forgiveness, the farewell sermon — closing dua"
+   ],
+   "scripted": true,
+   "seo": {
+    "description": "سیرت النبی ﷺ کا مدنی دور — ہجرت مدینہ سے وصال مبارک تک۔ غزوہ بدر، فتح مکہ، اور حجۃ الوداع کے ایمان افروز واقعات۔\n\nZikr-e-Ilahi کو سبسکرائب کریں۔\n\n#Seerah #سیرت_النبی #Madina #Badr #FatahMakkah #IslamicHistory #ZikreIlahi",
+    "tags": [
+     "seerah",
+     "madina",
+     "prophet muhammad",
+     "سیرت النبی",
+     "badr",
+     "fatah makkah",
+     "hijrat",
+     "islamic history",
+     "hajjatul wida",
+     "zikr e ilahi",
+     "مدنی دور",
+     "غزوہ بدر",
+     "فتح مکہ"
+    ],
+    "title": "سیرت النبی ﷺ مدنی دور | ہجرت سے وصال تک | Madani Life of Prophet Muhammad PBUH"
+   },
+   "title_en": "Seerah of Prophet Muhammad (PBUH): The Madani Period",
+   "title_urdu": "سیرت النبی ﷺ: مدنی دور — ہجرت سے وصال تک"
+  },
+  {
+   "backgrounds": [
+    "hist-bg-desert-caravan.jpg",
+    "hist-bg-geometric-gold.jpg"
+   ],
+   "era": "573–634 CE",
+   "facts": {
+    "birth": "573 CE, Makkah — tribe Banu Taym",
+    "caliphate": "632–634 CE (2 years 3 months) — first Rashidun caliph, elected at Saqifa Bani Saida",
+    "cave": "Ghar-e-Saur companion during Hijrat — 'Allah is with us' (Quran 9:40)",
+    "death": "22 Jumada al-Thani 13 AH / 634 CE — age 63, buried beside the Prophet ﷺ",
+    "quran_compilation": "Ordered first compilation after Yamama — Zaid bin Sabit (R.A.)",
+    "ridda_wars": "Wars against apostasy — Musaylimah the liar killed at Yamama (633 CE)",
+    "title_siddiq": "Siddiq — affirmed the Mi'raj without hesitation"
+   },
+   "id": "abu-bakr",
+   "outline": [
+    "Hook: The man who believed in one night what others doubted for years",
+    "Background: The trusted merchant of Makkah — truthfulness before Islam",
+    "Chapter 1: The cave — Ghar-e-Saur, the spider's web, 'do not grieve, Allah is with us'",
+    "Chapter 2: The storm after the storm — Ridda wars, Musaylimah, Yamama",
+    "Chapter 3: Guarding the Quran — the first compilation that preserved the Book forever",
+    "Lessons: loyalty, humility, spending everything for Allah — closing dua"
+   ],
+   "scripted": true,
+   "seo": {
+    "description": "حضرت ابوبکر صدیق رضی اللہ عنہ کی مکمل سیرت — یار غار، پہلے خلیفہ، جنگیں ردت، اور قرآن کی تدوین۔\n\nZikr-e-Ilahi کو سبسکرائب کریں۔\n\n#AbuBakr #ابوبکر_صدیق #KhulafaERashideen #IslamicHistory #ZikreIlahi",
+    "tags": [
+     "abu bakr",
+     "ابوبکر صدیق",
+     "khulafa e rashideen",
+     "siddiq",
+     "islamic history",
+     "first caliph",
+     "ghar e saur",
+     "zikr e ilahi",
+     "sahaba",
+     "ridda wars"
+    ],
+    "title": "حضرت ابوبکر صدیق رضی اللہ عنہ کی سیرت | پہلے خلیفہ | Abu Bakr Siddiq RA"
+   },
+   "title_en": "Hazrat Abu Bakr Siddiq (RA): The First Caliph",
+   "title_urdu": "حضرت ابوبکر صدیق رضی اللہ عنہ — یار غار و یار مزار"
+  },
+  {
+   "backgrounds": [
+    "hist-bg-jerusalem-dawn.jpg",
+    "hist-bg-geometric-gold.jpg",
+    "hist-bg-baghdad-golden.jpg"
+   ],
+   "era": "584–644 CE",
+   "facts": {
+    "birth": "584 CE, Makkah — Banu Adi",
+    "caliphate": "634–644 CE (10 years 6 months) — appointed by Abu Bakr (R.A.)",
+    "conquests": "Jerusalem 637 CE (15 AH, received keys personally), Persia — Qadisiyyah 636 CE, Egypt 641 CE",
+    "conversion": "6th year of prophethood — Islam's public strength began",
+    "martyrdom": "26 Dhul-Hijjah 23 AH / 644 CE — stabbed by Abu Lulu Feroz during Fajr prayer",
+    "reforms": "Hijri calendar, Diwan (state register), courts/qazis, police, land revenue system",
+    "title_farooq": "Farooq — the distinguisher between truth and falsehood (given by the Prophet ﷺ)"
+   },
+   "id": "umar-farooq",
+   "outline": [
+    "Hook: The man whose opinion the Quran confirmed — and whose justice made empires tremble",
+    "Background: The fierce opponent who became Islam's shield",
+    "Chapter 1: Ten years that redrew the map — Persia falls, Jerusalem opens its gates",
+    "Chapter 2: The caliph who patrolled at night — the woman and the cooking pot, justice for all",
+    "Chapter 3: The state builder — calendar, courts, treasury: institutions that outlived empires",
+    "Lessons: justice without fear, accountability, simplicity in power — closing dua"
+   ],
+   "scripted": true,
+   "seo": {
+    "description": "حضرت عمر فاروق رضی اللہ عنہ کی سیرت — فتوحات، اصلاحات، اور عدل کی بے مثال داستان۔\n\nZikr-e-Ilahi کو سبسکرائب کریں۔\n\n#UmarFarooq #عمر_فاروق #KhulafaERashideen #Justice #IslamicHistory #ZikreIlahi",
+    "tags": [
+     "umar farooq",
+     "عمر فاروق",
+     "umar bin khattab",
+     "khulafa e rashideen",
+     "justice in islam",
+     "jerusalem 637",
+     "islamic history",
+     "zikr e ilahi",
+     "sahaba"
+    ],
+    "title": "حضرت عمر فاروق رضی اللہ عنہ | عدل و انصاف کی مثال | Umar bin Khattab RA"
+   },
+   "title_en": "Hazrat Umar Farooq (RA): The Pillar of Justice",
+   "title_urdu": "حضرت عمر فاروق رضی اللہ عنہ — عدل کا مینار"
+  },
+  {
+   "backgrounds": [
+    "hist-bg-andalusia-court.jpg",
+    "hist-bg-desert-caravan.jpg",
+    "hist-bg-geometric-gold.jpg"
+   ],
+   "era": "711 CE",
+   "facts": {
+    "advance": "Split army in four — Cordoba (Mughith al-Rumi), Granada, Toledo (Tariq himself)",
+    "army": "~7,000 soldiers, mostly Berber converts",
+    "commander": "Freedman/general of Musa bin Nusayr, governor of Ifriqiya",
+    "guadalete": "19 July 711 CE — Battle of Guadalete, King Roderic killed",
+    "landing": "April 711 CE (92 AH) — landed at Jabal Tariq (Gibraltar, 'Mountain of Tariq')",
+    "legacy": "781 years of Muslim Spain began; Gibraltar still bears his name",
+    "recall": "714 CE — recalled to Damascus by Caliph Al-Walid I with Musa"
+   },
+   "id": "tariq-bin-ziyad",
+   "outline": [
+    "Hook: 'The sea is behind you and the enemy before you' — the speech that burned the ships",
+    "Background: North Africa to Iberia — Musa's vision, Julian's ships, a divided Visigothic Spain",
+    "Chapter 1: The landing — 7,000 against a kingdom, Jabal Tariq",
+    "Chapter 2: Guadalete — 19 July 711, the day a kingdom fell",
+    "Chapter 3: The lightning advance — Cordoba, Granada, Toledo in months",
+    "Lessons: tawakkul, resolve, when retreat is not an option — closing dua"
+   ],
+   "scripted": false,
+   "seo": {
+    "description": "طارق بن زیاد کی اندلس فتح کی ایمان افروز داستان — 711 عیسوی میں 7000 مجاہدین کا کارنامہ۔\n\nZikr-e-Ilahi کو سبسکرائب کریں۔\n\n#TariqBinZiyad #طارق_بن_زیاد #Andalusia #IslamicHistory #Spain #ZikreIlahi",
+    "tags": [
+     "tariq bin ziyad",
+     "طارق بن زیاد",
+     "andalusia",
+     "conquest of spain",
+     "gibraltar",
+     "guadalete",
+     "islamic history",
+     "zikr e ilahi",
+     "muslim spain",
+     "711"
+    ],
+    "title": "طارق بن زیاد | اندلس کی فتح کی مکمل داستان | Tariq bin Ziyad Conquest of Spain"
+   },
+   "title_en": "Tariq bin Ziyad: The Conquest of Andalusia",
+   "title_urdu": "طارق بن زیاد — اندلس کی فتح اور جلتا ہوا بیڑہ",
+   "script_note": "Script draft in progress - full 30-min version pending"
+  },
+  {
+   "backgrounds": [
+    "hist-bg-desert-caravan.jpg",
+    "hist-bg-geometric-gold.jpg",
+    "hist-bg-baghdad-golden.jpg"
+   ],
+   "era": "712 CE",
+   "facts": {
+    "age": "17 years old at command — nephew and son-in-law of Al-Hajjaj bin Yusuf",
+    "aror": "20 June 712 CE — Battle of Aror, Raja Dahir killed",
+    "caliph": "Campaign under Umayyad Caliph Al-Walid I",
+    "cause": "Arab ships looted by pirates near Debal; Raja Dahir failed to act",
+    "debal": "712 CE (93 AH) — landed at Debal with ~20,000 troops, siege engines (manjaniq)",
+    "legacy": "First major Islamic foothold in the Indian subcontinent; just administration, religious tolerance",
+    "multan": "713 CE — captured Multan, the 'City of Gold'"
+   },
+   "id": "muhammad-bin-qasim",
+   "outline": [
+    "Hook: Seventeen years old — and the Caliph trusted him with an empire's frontier",
+    "Background: Pirates of Debal, Hajjaj's fury, the road to Sindh",
+    "Chapter 1: The landing — catapults, discipline, the fall of Debal",
+    "Chapter 2: Aror — 20 June 712, Raja Dahir's last stand",
+    "Chapter 3: The just conqueror — temples protected, people secure, Multan the golden",
+    "Lessons: youth with purpose, justice in victory, amanat — closing dua"
+   ],
+   "scripted": false,
+   "seo": {
+    "description": "محمد بن قاسم کی سندھ فتح کی مکمل داستان — 17 سالہ سپہ سالار کا تاریخی کارنامہ 712 عیسوی۔\n\nZikr-e-Ilahi کو سبسکرائب کریں۔\n\n#MuhammadBinQasim #محمد_بن_قاسم #Sindh #IslamicHistory #Pakistan #ZikreIlahi",
+    "tags": [
+     "muhammad bin qasim",
+     "محمد بن قاسم",
+     "sindh",
+     "conquest of sindh",
+     "712",
+     "raja dahir",
+     "islamic history",
+     "pakistan history",
+     "zikr e ilahi",
+     "umayyad"
+    ],
+    "title": "محمد بن قاسم | سندھ کی فتح 712ء | Muhammad bin Qasim Conquest of Sindh"
+   },
+   "title_en": "Muhammad bin Qasim: The Conquest of Sindh",
+   "title_urdu": "محمد بن قاسم — سندھ کی فتح، سترہ سالہ سپہ سالار",
+   "script_note": "Script draft in progress - full 30-min version pending"
+  },
+  {
+   "backgrounds": [
+    "hist-bg-jerusalem-dawn.jpg",
+    "hist-bg-desert-caravan.jpg",
+    "hist-bg-geometric-gold.jpg"
+   ],
+   "era": "1137–1193 CE",
+   "facts": {
+    "birth": "1137/1138 CE, Tikrit — Kurdish origin, served Noor-ud-Din Zengi",
+    "character": "Famous for chivalry — freed prisoners, treated enemies with mercy",
+    "death": "4 March 1193 CE, Damascus — died with barely enough for burial",
+    "egypt": "1169 CE — became vizier of Fatimid Egypt, ended Fatimid caliphate 1171",
+    "hattin": "4 July 1187 CE — Battle of Hattin, Crusader army destroyed",
+    "jerusalem": "2 October 1187 CE — retook Jerusalem after 88 years of Crusader rule",
+    "third_crusade": "1189–1192 CE — faced Richard the Lionheart; Treaty of Ramla 1192"
+   },
+   "id": "salahuddin",
+   "outline": [
+    "Hook: The king who wept when Jerusalem fell — and the mercy that shamed kings",
+    "Background: 88 years of occupation — the Crusader kingdom and a fractured Muslim world",
+    "Chapter 1: Hattin — 4 July 1187, the horns of Hattin and a shattered cross",
+    "Chapter 2: Jerusalem — the mercy after victory the world still remembers",
+    "Chapter 3: Richard the Lionheart — war between lions, respect between warriors",
+    "Lessons: character in victory, unity, the simplicity of a sultan — closing dua"
+   ],
+   "scripted": true,
+   "seo": {
+    "description": "صلاح الدین ایوبی کی مکمل داستان — حطین کی جنگ اور بیت المقدس کی فتح 1187ء۔\n\nZikr-e-Ilahi کو سبسکرائب کریں۔\n\n#Salahuddin #صلاح_الدین_ایوبی #Jerusalem #Crusades #Hattin #IslamicHistory #ZikreIlahi",
+    "tags": [
+     "salahuddin",
+     "صلاح الدین ایوبی",
+     "jerusalem",
+     "crusades",
+     "hattin",
+     "1187",
+     "saladin",
+     "islamic history",
+     "baitul maqdis",
+     "zikr e ilahi"
+    ],
+    "title": "صلاح الدین ایوبی | بیت المقدس کی فتح | Salahuddin Ayyubi Crusades History"
+   },
+   "title_en": "Salahuddin Ayyubi: The Liberator of Jerusalem",
+   "title_urdu": "صلاح الدین ایوبی — بیت المقدس کا فاتح"
+  },
+  {
+   "backgrounds": [
+    "hist-bg-desert-caravan.jpg",
+    "hist-bg-jerusalem-dawn.jpg",
+    "hist-bg-geometric-gold.jpg"
+   ],
+   "era": "630 CE (8 AH)",
+   "facts": {
+    "amnesty": "General amnesty — 'No blame upon you today' (La tasreeba alaykum al-yawm)",
+    "army": "10,000 Muslims marched from Madinah",
+    "bilal": "Bilal (R.A.) gave the adhan from atop the Kaaba",
+    "cause": "Quraysh violated the Treaty of Hudaybiyyah (attack on Khuza'a)",
+    "date": "20 Ramadan 8 AH / 11 January 630 CE",
+    "entry": "Entered from four directions; almost no resistance",
+    "idols": "360 idols around the Kaaba removed — 'Truth has come, falsehood has vanished' (Quran 17:81)"
+   },
+   "id": "fatah-makkah",
+   "outline": [
+    "Hook: 10,000 torches on the hills — and a city that expected revenge",
+    "Background: The broken treaty — Hudaybiyyah's peace shattered by Khuza'a's blood",
+    "Chapter 1: The march — secrecy, Abu Sufyan's night, the fires of a nation",
+    "Chapter 2: The entry — 'no blame upon you today', enemies become brothers",
+    "Chapter 3: The cleansing — 360 idols fall, Bilal's adhan from the Kaaba's roof",
+    "Lessons: forgiveness at the peak of power, the prophetic character — closing dua"
+   ],
+   "scripted": true,
+   "seo": {
+    "description": "فتح مکہ کا ایمان افروز واقعہ — عام معافی اور 360 بتوں کا خاتمہ۔\n\nZikr-e-Ilahi کو سبسکرائب کریں۔\n\n#FatahMakkah #فتح_مکہ #Seerah #IslamicHistory #Makkah #ZikreIlahi",
+    "tags": [
+     "fatah makkah",
+     "فتح مکہ",
+     "conquest of makkah",
+     "seerah",
+     "630",
+     "kaaba",
+     "general amnesty",
+     "islamic history",
+     "zikr e ilahi",
+     "prophet muhammad"
+    ],
+    "title": "فتح مکہ کا مکمل واقعہ | 20 رمضان 8 ہجری | Conquest of Makkah"
+   },
+   "title_en": "The Conquest of Makkah: Victory Without Bloodshed",
+   "title_urdu": "فتح مکہ — بغیر خون بہے عظیم فتح"
+  },
+  {
+   "backgrounds": [
+    "hist-bg-baghdad-golden.jpg",
+    "hist-bg-geometric-gold.jpg"
+   ],
+   "era": "810–870 CE",
+   "facts": {
+    "birth": "194 AH / 810 CE, Bukhara (Uzbekistan) — born blind, eyesight restored after mother's dua",
+    "death": "256 AH / 870 CE, Khartank (near Samarkand) — age 62",
+    "memory": "Memorized 70,000+ hadith with chains; tested in Baghdad with 100 mixed narrations",
+    "method": "Performed ghusl and prayed 2 rakats before writing each hadith",
+    "sahih": "Sahih Bukhari — 16 years of work, ~7,275 narrations (with repetitions), selected from 600,000"
+   },
+   "id": "imam-bukhari",
+   "outline": [
+    "Hook: The boy who lost his sight — and gained a vision that guides a billion",
+    "Background: Bukhara 810 CE — a mother's tears, a dream of Ibrahim (A.S.), sight restored",
+    "Chapter 1: The memory — 70,000 hadith, the Baghdad test of 100 narrations",
+    "Chapter 2: Sixteen years — ghusl and prayer before every hadith, 600,000 examined",
+    "Chapter 3: The book — Sahih Bukhari, the most authentic book after the Quran",
+    "Lessons: dedication, verification, love of the Prophet ﷺ — closing dua"
+   ],
+   "scripted": true,
+   "seo": {
+    "description": "امام بخاری رحمہ اللہ کی حیات — صحیح بخاری کی تدوین کی عظیم داستان۔\n\nZikr-e-Ilahi کو سبسکرائب کریں۔\n\n#ImamBukhari #امام_بخاری #SahihBukhari #Hadith #IslamicScholars #ZikreIlahi",
+    "tags": [
+     "imam bukhari",
+     "امام بخاری",
+     "sahih bukhari",
+     "hadith",
+     "islamic scholars",
+     "bukhara",
+     "islamic history",
+     "zikr e ilahi",
+     "muhaddith"
+    ],
+    "title": "امام بخاری رحمہ اللہ کی زندگی | صحیح بخاری | Imam Bukhari Biography"
+   },
+   "title_en": "Imam Bukhari (RH): The Compiler of Sahih Bukhari",
+   "title_urdu": "امام بخاری رحمہ اللہ — صحیح بخاری کے مرتب"
+  },
+  {
+   "backgrounds": [
+    "hist-bg-baghdad-golden.jpg",
+    "hist-bg-geometric-gold.jpg"
+   ],
+   "era": "830–1258 CE",
+   "facts": {
+    "destruction": "1258 CE — Mongols under Hulagu Khan sacked Baghdad; Tigris ran black with ink",
+    "founding": "~830 CE by Caliph Al-Mamun (Abbasid) — library, academy, translation center",
+    "khwarizmi": "Al-Khwarizmi — algebra (Al-Kitab al-Mukhtasar), algorithm named after him",
+    "legacy": "Preserved Greek knowledge, transmitted to Europe via Andalusia — foundation of Renaissance",
+    "others": "Ibn Sina (medicine), Alhazen/Ibn al-Haytham (optics), Al-Zahrawi (surgery)",
+    "translation": "Greek, Persian, Indian works translated — translators paid in gold by weight of books"
+   },
+   "id": "baitul-hikmah",
+   "outline": [
+    "Hook: When books were weighed in gold — and the Tigris ran black with ink",
+    "Background: Al-Mamun's dream — Aristotle at the door, a house for all wisdom",
+    "Chapter 1: The translators — Hunayn ibn Ishaq, gold for knowledge, a library of the world",
+    "Chapter 2: The giants — Al-Khwarizmi's algebra, Ibn Sina's Canon, light itself explained",
+    "Chapter 3: The fall — 1258, Hulagu's hordes, and what the ashes taught Europe",
+    "Lessons: knowledge as worship, the pen's power, rebuilding — closing dua"
+   ],
+   "scripted": true,
+   "seo": {
+    "description": "بیت الحکمہ بغداد — اسلامی علمی سنہرے دور کی مکمل داستان۔ الخوارزمی، ابن سینا اور ترجمے کی تحریک۔\n\nZikr-e-Ilahi کو سبسکرائب کریں۔\n\n#BaitulHikmah #بیت_الحکمہ #IslamicGoldenAge #Baghdad #MuslimScientists #ZikreIlahi",
+    "tags": [
+     "house of wisdom",
+     "بیت الحکمہ",
+     "baghdad",
+     "islamic golden age",
+     "alkhwarizmi",
+     "ibn sina",
+     "abbasid",
+     "muslim scientists",
+     "islamic history",
+     "zikr e ilahi"
+    ],
+    "title": "بیت الحکمہ بغداد | اسلامی سنہرے دور کی داستان | House of Wisdom"
+   },
+   "title_en": "The House of Wisdom: Baghdad's Golden Age",
+   "title_urdu": "بیت الحکمہ — بغداد کا علمی سنہرا دور"
+  },
+  {
+   "id": "usman-ghani",
+   "title_urdu": "حضرت عثمان غنی رضی اللہ عنہ — سخاوت کا سمندر",
+   "title_en": "Hazrat Usman-e-Ghani (RA): The Generous Caliph",
+   "era": "576–656 CE",
+   "backgrounds": [
+    "hist-bg-geometric-gold.jpg",
+    "hist-bg-baghdad-golden.jpg"
+   ],
+   "facts": {
+    "birth": "576 CE, Makkah — Banu Umayya",
+    "caliphate": "644–656 CE (12 years) — third Rashidun caliph",
+    "generosity": "Bought the well of Rumah, equipped the army of Tabuk (Jaish-ul-Usra)",
+    "martyrdom": "18 Dhul-Hijjah 35 AH / 656 CE — martyred while reciting Quran",
+    "mushaf": "Standardized the Quran (Mushaf-e-Usmani) — copies sent to all provinces",
+    "title": "Ghani (rich) and Zun-Nurayn (possessor of two lights — married two daughters of the Prophet ﷺ)"
+   },
+   "outline": [
+    "Hook: The man the angels felt shy before",
+    "Background: The merchant prince of Makkah who bought paradise",
+    "Chapter 1: Tabuk — the army of hardship equipped by one man's wealth",
+    "Chapter 2: The Mushaf — one Quran for the whole ummah, forever",
+    "Chapter 3: The martyrdom — reciting Quran as the doors broke",
+    "Lessons: generosity, dignity in trial — closing dua"
+   ],
+   "scripted": false,
+   "seo": {
+    "title": "حضرت عثمان غنی رضی اللہ عنہ کی سیرت | Usman e Ghani RA",
+    "description": "حضرت عثمان غنی رضی اللہ عنہ کی مکمل سیرت — سخاوت، قرآن کی تدوین، اور شہادت۔\n\nZikr-e-Ilahi کو سبسکرائب کریں۔\n\n#UsmanGhani #عثمان_غنی #KhulafaERashideen #IslamicHistory #ZikreIlahi",
+    "tags": [
+     "usman ghani",
+     "عثمان غنی",
+     "khulafa e rashideen",
+     "mushaf usmani",
+     "sahaba",
+     "islamic history",
+     "zikr e ilahi"
+    ]
+   }
+  },
+  {
+   "id": "ali-murtaza",
+   "title_urdu": "حضرت علی المرتضی رضی اللہ عنہ — علم کا دروازہ",
+   "title_en": "Hazrat Ali (RA): The Gate of Knowledge",
+   "era": "600–661 CE",
+   "backgrounds": [
+    "hist-bg-geometric-gold.jpg",
+    "hist-bg-desert-caravan.jpg"
+   ],
+   "facts": {
+    "birth": "600 CE, inside the Kaaba — Banu Hashim",
+    "caliphate": "656–661 CE (4 years 9 months) — fourth Rashidun caliph",
+    "conversion": "First youth to accept Islam (age ~10)",
+    "khaybar": "Conquered the fort of Khaybar — 'I will give the flag to one who loves Allah and His Messenger'",
+    "knowledge": "'I am the city of knowledge and Ali is its gate' (Tirmidhi)",
+    "martyrdom": "21 Ramadan 40 AH / 661 CE — struck by Ibn Muljim during Fajr in Kufa"
+   },
+   "outline": [
+    "Hook: Born in the Kaaba, raised in the Prophet's ﷺ own house",
+    "Background: The first youth of Islam — sleeping in the Prophet's ﷺ bed on Hijrat night",
+    "Chapter 1: Khaybar — the gate torn off, the lion unleashed",
+    "Chapter 2: The caliphate — justice in the storm of fitna",
+    "Chapter 3: The martyrdom — 'the most wretched will strike you here'",
+    "Lessons: courage with knowledge, justice over kinship — closing dua"
+   ],
+   "scripted": false,
+   "seo": {
+    "title": "حضرت علی رضی اللہ عنہ کی سیرت | Ali ibn Abi Talib RA",
+    "description": "حضرت علی المرتضی رضی اللہ عنہ کی مکمل سیرت — خیبر کی فتح اور علم کا دروازہ۔\n\nZikr-e-Ilahi کو سبسکرائب کریں۔\n\n#AliRA #حضرت_علی #KhulafaERashideen #Khaybar #IslamicHistory #ZikreIlahi",
+    "tags": [
+     "ali ra",
+     "حضرت علی",
+     "ali ibn abi talib",
+     "khaybar",
+     "khulafa e rashideen",
+     "sahaba",
+     "islamic history",
+     "zikr e ilahi"
+    ]
+   }
+  },
+  {
+   "id": "badr",
+   "title_urdu": "غزوہ بدر — یوم الفرقان",
+   "title_en": "The Battle of Badr: The Day of Criterion",
+   "era": "624 CE (2 AH)",
+   "backgrounds": [
+    "hist-bg-desert-caravan.jpg",
+    "hist-bg-geometric-gold.jpg"
+   ],
+   "facts": {
+    "date": "17 Ramadan 2 AH / 13 March 624 CE",
+    "martyrs": "14 Muslim martyrs",
+    "odds": "313 Muslims vs ~1000 Quraysh",
+    "outcome": "Decisive Muslim victory — 70 Quraysh killed, 70 captured",
+    "quran": "Quran 8:9 — angels sent to assist",
+    "reason": "Caravan of Abu Sufyan; Quraysh marched to crush Madinah"
+   },
+   "outline": [
+    "Hook: 313 against a thousand — the math of faith",
+    "Background: The caravan, the wells, the night before",
+    "Chapter 1: The ranks — 'advance to a paradise as wide as the heavens'",
+    "Chapter 2: The unseen army — angels in the dust of Badr",
+    "Chapter 3: The aftermath — captives taught to read, mercy in victory",
+    "Lessons: tawakkul, preparation with prayer — closing dua"
+   ],
+   "scripted": false,
+   "seo": {
+    "title": "غزوہ بدر کا مکمل واقعہ | 17 رمضان | Battle of Badr",
+    "description": "غزوہ بدر یوم الفرقان کا ایمان افروز واقعہ — 313 مجاہدین کی عظیم فتح۔\n\nZikr-e-Ilahi کو سبسکرائب کریں۔\n\n#Badr #غزوہ_بدر #Seerah #IslamicHistory #ZikreIlahi",
+    "tags": [
+     "badr",
+     "غزوہ بدر",
+     "battle of badr",
+     "313",
+     "seerah",
+     "islamic history",
+     "ramadan",
+     "zikr e ilahi"
+    ]
+   }
+  },
+  {
+   "id": "nooruddin-zengi",
+   "title_urdu": "نور الدین زنگی — صلیبیوں کا خوف",
+   "title_en": "Noor-ud-Din Zengi: The Just King",
+   "era": "1118–1174 CE",
+   "backgrounds": [
+    "hist-bg-jerusalem-dawn.jpg",
+    "hist-bg-desert-caravan.jpg"
+   ],
+   "facts": {
+    "birth": "1118 CE — son of Imad-ud-Din Zengi, Atabeg of Aleppo",
+    "death": "1174 CE, Damascus",
+    "edessa": "1144 CE — recaptured Edessa, triggering the Second Crusade",
+    "jerusalem_dream": "Famous dream of the Prophet ﷺ about two men at his grave — protected Madinah",
+    "legacy": "United Syria, mentor of Salahuddin, known as 'the Just King'",
+    "minbar": "Built the minbar of Al-Aqsa (completed by Salahuddin after liberation)"
+   },
+   "outline": [
+    "Hook: The dream that made a king ride through the night to Madinah",
+    "Background: A fractured Syria — Zengi's son inherits the jihad",
+    "Chapter 1: Edessa 1144 — the domino that shook Europe",
+    "Chapter 2: The just king — courts, hospitals, and the minbar of Al-Aqsa",
+    "Chapter 3: The mentor — preparing Salahuddin for Jerusalem",
+    "Lessons: justice as strength, preparing the next generation — closing dua"
+   ],
+   "scripted": false,
+   "seo": {
+    "title": "نور الدین زنگی کی داستان | Nooruddin Zengi History",
+    "description": "نور الدین زنگی — عدل کا بادشاہ اور صلاح الدین کے استاد کی مکمل داستان۔\n\nZikr-e-Ilahi کو سبسکرائب کریں۔\n\n#NooruddinZengi #نور_الدین_زنگی #Crusades #IslamicHistory #ZikreIlahi",
+    "tags": [
+     "nooruddin zengi",
+     "نور الدین زنگی",
+     "crusades",
+     "edessa",
+     "salahuddin",
+     "islamic history",
+     "zikr e ilahi",
+     "aleppo"
+    ]
+   }
+  },
+  {
+   "id": "mehmed-fatih",
+   "title_urdu": "سلطان محمد فاتح — قسطنطنیہ کی فتح",
+   "title_en": "Mehmed the Conqueror: The Fall of Constantinople",
+   "era": "1432–1481 CE",
+   "backgrounds": [
+    "hist-bg-ottoman-mosque.jpg",
+    "hist-bg-jerusalem-dawn.jpg",
+    "hist-bg-geometric-gold.jpg"
+   ],
+   "facts": {
+    "age": "21 years old at conquest",
+    "cannon": "Giant cannon by Orban — 27 feet long",
+    "date": "29 May 1453 CE — after 53-day siege",
+    "hadith": "'Constantinople will be conquered; blessed is the commander' (Musnad Ahmad)",
+    "preparation": "Rumeli Hisari fortress built in 4 months, 350 ships",
+    "ships_over_land": "Ships dragged overland into the Golden Horn on greased logs"
+   },
+   "outline": [
+    "Hook: 'You will conquer Constantinople' — a prophecy 800 years in the making",
+    "Background: The city of Caesar's — walls that stood a thousand years",
+    "Chapter 1: The preparation — the cannon, the fortress, the impossible plan",
+    "Chapter 2: Ships over land — the night the Golden Horn was breached",
+    "Chapter 3: 29 May 1453 — the dawn of Istanbul",
+    "Lessons: vision, preparation, fulfilling prophecy — closing dua"
+   ],
+   "scripted": false,
+   "seo": {
+    "title": "فتح قسطنطنیہ 1453 | سلطان محمد فاتح | Fall of Constantinople",
+    "description": "سلطان محمد فاتح کی قسطنطنیہ فتح کی عظیم داستان — 1453ء کا تاریخی واقعہ۔\n\nZikr-e-Ilahi کو سبسکرائب کریں۔\n\n#MehmedFatih #فتح_قسطنطنیہ #Ottoman #1453 #Istanbul #IslamicHistory #ZikreIlahi",
+    "tags": [
+     "mehmed fatih",
+     "فتح قسطنطنیہ",
+     "constantinople 1453",
+     "ottoman",
+     "istanbul",
+     "sultan mehmed",
+     "islamic history",
+     "zikr e ilahi"
+    ]
+   }
+  },
+  {
+   "id": "harun-rashid",
+   "title_urdu": "ہارون الرشید — عباسی عروج کا دور",
+   "title_en": "Harun al-Rashid: Peak of the Abbasid Age",
+   "era": "786–809 CE",
+   "backgrounds": [
+    "hist-bg-baghdad-golden.jpg",
+    "hist-bg-geometric-gold.jpg"
+   ],
+   "facts": {
+    "caliphate": "786–809 CE (23 years) — fifth Abbasid caliph",
+    "baghdad": "Capital at its peak — ~1 million people, world's largest city",
+    "baitul_hikmah": "Patron of translation movement; Bait-ul-Hikmah flourished under his son Al-Mamun",
+    "death": "809 CE at Tus (Khorasan) during campaign",
+    "night_patrols": "Famous for disguised night patrols with Ja'far Barmaki",
+    "treasury": "Empire from Spain to India; annual revenue ~500 million dirhams"
+   },
+   "outline": [
+    "Hook: The caliph who walked Baghdad's streets in disguise",
+    "Background: Baghdad — the round city, a million souls, the world's beating heart",
+    "Chapter 1: The golden court — poets, scholars, and the Barmakids",
+    "Chapter 2: The night patrols — justice in a merchant's cloak",
+    "Chapter 3: The legacy — the stage set for the golden age",
+    "Lessons: power with humility, patronage of knowledge — closing dua"
+   ],
+   "scripted": false,
+   "seo": {
+    "title": "ہارون الرشید کا دور | عباسی خلافت کا عروج | Harun al-Rashid",
+    "description": "ہارون الرشید کے دور کی داستان — بغداد کا سنہرا دور اور علمی سرپرستی۔\n\nZikr-e-Ilahi کو سبسکرائب کریں۔\n\n#HarunRashid #ہارون_الرشید #Abbasid #Baghdad #IslamicHistory #ZikreIlahi",
+    "tags": [
+     "harun rashid",
+     "ہارون الرشید",
+     "abbasid",
+     "baghdad",
+     "islamic golden age",
+     "islamic history",
+     "zikr e ilahi",
+     "caliphate"
+    ]
+   }
+  },
+  {
+   "id": "abdul-malik",
+   "title_urdu": "عبدالملک بن مروان — اموی خلافت کا معمار",
+   "title_en": "Abdul Malik bin Marwan: Architect of the Umayyad State",
+   "era": "685–705 CE",
+   "backgrounds": [
+    "hist-bg-jerusalem-dawn.jpg",
+    "hist-bg-geometric-gold.jpg"
+   ],
+   "facts": {
+    "caliphate": "685–705 CE (20 years) — fifth Umayyad caliph",
+    "coinage": "First purely Islamic gold dinar (696 CE) — no images, only inscriptions",
+    "dome": "Dome of the Rock completed 691 CE (72 AH)",
+    "language": "Arabic made the official language of the state (diwan)",
+    "second_fitna": "Ended the second civil war; consolidated the empire"
+   },
+   "outline": [
+    "Hook: The man who gave Islam its coins, its language, and its most famous dome",
+    "Background: Civil war — the ummah fractured, the state on the brink",
+    "Chapter 1: The consolidation — ending fitna, rebuilding the state",
+    "Chapter 2: The Dome — 691 CE, gold over Jerusalem's skyline",
+    "Chapter 3: The dinar — 'there is no god but Allah' stamped in gold",
+    "Lessons: institution-building, unity after division — closing dua"
+   ],
+   "scripted": false,
+   "seo": {
+    "title": "عبدالملک بن مروان | اموی خلافت | Dome of the Rock History",
+    "description": "عبدالملک بن مروان کی داستان — مسجد اقصیٰ کا سنہرا گنبد اور اسلامی سکے۔\n\nZikr-e-Ilahi کو سبسکرائب کریں۔\n\n#AbdulMalik #عبدالملک_بن_مروان #Umayyad #DomeOfTheRock #IslamicHistory #ZikreIlahi",
+    "tags": [
+     "abdul malik",
+     "عبدالملک بن مروان",
+     "umayyad",
+     "dome of the rock",
+     "691",
+     "islamic history",
+     "jerusalem",
+     "zikr e ilahi"
+    ]
+   }
+  },
+  {
+   "id": "imam-abu-hanifa",
+   "title_urdu": "امام ابو حنیفہ رحمہ اللہ — فقہ کا امام",
+   "title_en": "Imam Abu Hanifa (RH): The Great Imam",
+   "era": "699–767 CE",
+   "backgrounds": [
+    "hist-bg-geometric-gold.jpg",
+    "hist-bg-baghdad-golden.jpg"
+   ],
+   "facts": {
+    "birth": "80 AH / 699 CE, Kufa — Persian origin, silk merchant",
+    "death": "150 AH / 767 CE — died in Abbasid prison, poisoned",
+    "fiqh": "Founder of Hanafi school — largest following worldwide",
+    "method": "Qiyas (analogical reasoning) and istihsan; 40-member scholarly council",
+    "students": "Abu Yusuf (chief judge), Muhammad al-Shaybani",
+    "trial": "Refused judgeship under Al-Mansur — imprisoned for independence"
+   },
+   "outline": [
+    "Hook: The merchant who became the most followed jurist in history",
+    "Background: Kufa — the city of debate, a silk trader with a scholar's heart",
+    "Chapter 1: The council of forty — how Hanafi fiqh was built",
+    "Chapter 2: The refusal — prison over compromise",
+    "Chapter 3: The legacy — half the ummah follows his school",
+    "Lessons: principle over position, scholarship as service — closing dua"
+   ],
+   "scripted": false,
+   "seo": {
+    "title": "امام ابو حنیفہ رحمہ اللہ کی زندگی | Imam Abu Hanifa Biography",
+    "description": "امام ابو حنیفہ رحمہ اللہ کی حیات — فقہ حنفی کی تدوین اور اصول پسندی کی مثال۔\n\nZikr-e-Ilahi کو سبسکرائب کریں۔\n\n#ImamAbuHanifa #امام_ابو_حنیفہ #Hanafi #Fiqh #IslamicScholars #ZikreIlahi",
+    "tags": [
+     "abu hanifa",
+     "امام ابو حنیفہ",
+     "hanafi",
+     "fiqh",
+     "islamic scholars",
+     "kufa",
+     "islamic history",
+     "zikr e ilahi"
+    ]
+   }
+  },
+  {
+   "id": "tipu-sultan",
+   "title_urdu": "ٹیپو سلطان — شیر میسور",
+   "title_en": "Tipu Sultan: The Tiger of Mysore",
+   "era": "1751–1799 CE",
+   "backgrounds": [
+    "hist-bg-desert-caravan.jpg",
+    "hist-bg-geometric-gold.jpg"
+   ],
+   "facts": {
+    "birth": "1751 CE, Devanahalli",
+    "death": "4 May 1799 CE — martyred at Seringapatam, Fourth Anglo-Mysore War",
+    "rockets": "Pioneered iron-cased rockets — inspired British Congreve rockets",
+    "rule": "1782–1799 — modernized army, administration, trade",
+    "wars": "Four Anglo-Mysore Wars against the British East India Company"
+   },
+   "outline": [
+    "Hook: 'One day of a tiger is better than a hundred years of a jackal'",
+    "Background: Mysore — Hyder Ali's son inherits a kingdom under siege",
+    "Chapter 1: The tiger's rockets — iron fire that shocked the British",
+    "Chapter 2: Four wars — diplomacy, reform, and unbreakable resolve",
+    "Chapter 3: Seringapatam 1799 — the last stand of the tiger",
+    "Lessons: dignity over submission, innovation in adversity — closing dua"
+   ],
+   "scripted": false,
+   "seo": {
+    "title": "ٹیپو سلطان شیر میسور کی داستان | Tipu Sultan History",
+    "description": "ٹیپو سلطان کی مکمل داستان — شیر میسور کا انگریزوں کے خلاف جہاد۔\n\nZikr-e-Ilahi کو سبسکرائب کریں۔\n\n#TipuSultan #ٹیپو_سلطان #Mysore #IndianHistory #IslamicHistory #ZikreIlahi",
+    "tags": [
+     "tipu sultan",
+     "ٹیپو سلطان",
+     "mysore",
+     "tiger of mysore",
+     "1799",
+     "indian history",
+     "islamic history",
+     "zikr e ilahi"
+    ]
+   }
+  },
+  {
+   "id": "andalusia",
+   "title_urdu": "اندلس — آٹھ سو سال کا علمی عروج",
+   "title_en": "Andalusia: 800 Years of Islamic Civilization",
+   "era": "711–1492 CE",
+   "backgrounds": [
+    "hist-bg-andalusia-court.jpg",
+    "hist-bg-geometric-gold.jpg",
+    "hist-bg-baghdad-golden.jpg"
+   ],
+   "facts": {
+    "cordoba": "10th century Cordoba — 500,000 people, 70 libraries, street lighting",
+    "duration": "711–1492 CE — 781 years of Muslim presence",
+    "fall": "2 January 1492 — Granada fell to Ferdinand and Isabella",
+    "figures": "Ibn Rushd (Averroes), Ibn Sina's influence, Al-Zahrawi, Alhambra palace",
+    "library": "Caliph Al-Hakam II's library — 400,000 volumes",
+    "transfer": "Knowledge transferred to Europe — sparked the Renaissance"
+   },
+   "outline": [
+    "Hook: Street lights in the 10th century — while London was a muddy village",
+    "Background: From Tariq's landing to Abd al-Rahman's emirate",
+    "Chapter 1: Cordoba — the ornament of the world",
+    "Chapter 2: The scholars — Ibn Rushd, Al-Zahrawi, and the Alhambra's poetry in stone",
+    "Chapter 3: Granada 1492 — the keys, the tears, and what Europe inherited",
+    "Lessons: civilization through knowledge, the cost of division — closing dua"
+   ],
+   "scripted": false,
+   "seo": {
+    "title": "اندلس کی تاریخ | 800 سالہ اسلامی تہذیب | Islamic Spain History",
+    "description": "اندلس کی مکمل تاریخ — قرطبہ، الحمرا، اور 800 سالہ علمی عروج کی داستان۔\n\nZikr-e-Ilahi کو سبسکرائب کریں۔\n\n#Andalusia #اندلس #IslamicSpain #Cordoba #Alhambra #IslamicHistory #ZikreIlahi",
+    "tags": [
+     "andalusia",
+     "اندلس",
+     "islamic spain",
+     "cordoba",
+     "alhambra",
+     "granada 1492",
+     "ibn rushd",
+     "islamic history",
+     "zikr e ilahi"
+    ]
+   }
+  }
+ ]
+}
