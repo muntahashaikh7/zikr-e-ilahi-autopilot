@@ -130,7 +130,7 @@ jobs:
           ENTRY: ${{ steps.pick.outputs.entry }}
           VIDEO_URL: ${{ steps.release.outputs.url }}
         run: |
-          if [ -z "$IG_TOKEN" ]; then echo "IG secrets not set - skipping"; exit 0; fi
+          if [ -z "$IG_TOKEN" ] || [ -z "$IG_USER_ID" ]; then echo "IG secrets not set - skipping"; exit 0; fi
           IG_CAP=$(python3 -c "import json;print(json.load(open('out/mp-$ENTRY.json'))['platforms']['instagram']['caption'])")
           echo "=== IG ==="
           python3 scripts/upload_instagram.py "$VIDEO_URL" "$IG_CAP" | tee -a results.txt || echo "IG FAILED" | tee -a results.txt
