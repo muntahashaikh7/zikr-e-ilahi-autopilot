@@ -1,0 +1,160 @@
+name: History Weekend — long video build + publish
+
+# Fully autonomous. Zero AI tokens.
+# Runs Sat + Sun 10:00 PKT (05:00 UTC). Each run:
+#   1. Picks the next scripted topic from history_rotation.json
+#      (no repeats until all scripted topics cycle)
+#   2. Builds script -> Urdu voiceover (Edge TTS) -> 1920x1080 video
+#   3. Publishes a GitHub Release (public MP4 URL for FB fetching)
+#   4. YouTube: full SEO, public immediately (long-form video)
+#   5. Facebook: Page video via Graph API (long video OK)
+#   6. Commits history_rotation.json back
+#
+# Repo MUST be PUBLIC (release assets are the public video URLs for FB).
+# Required secrets: YT_CLIENT_ID, YT_CLIENT_SECRET, YT_REFRESH_TOKEN,
+#   FB_PAGE_ID, FB_PAGE_TOKEN.
+# NOTE: Instagram Reels caps at 3 min, TikTok not automated -> long videos
+# go to YouTube + Facebook only (standing distribution rule).
+
+on:
+  schedule:
+    # Sat + Sun 10:00 PKT = 05:00 UTC
+    - cron: "0 5 * * 6,0"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install system deps
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg > /dev/null
+          sudo mkdir -p /usr/share/fonts/truetype/noto
+          sudo cp assets/fonts/NotoNaskhArabic-Bold.ttf /usr/share/fonts/truetype/noto/
+          mkdir -p out
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Python deps
+        run: pip install -q arabic_reshaper pillow edge-tts
+
+      - name: Pick next history topic
+        id: pick
+        run: |
+          python3 - << 'PYEOF'
+          import json, os
+          from datetime import datetime, timedelta, timezone
+          utc = datetime.now(timezone.utc)
+          pkt = utc + timedelta(hours=5)
+          bank = json.load(open("islamic_history_topics.json", encoding="utf-8"))
+          state = json.load(open("history_rotation.json"))
+          scripted = [t for t in bank["topics"] if t.get("scripted")]
+          ids = [t["id"] for t in scripted]
+          used = set(state["used_ids"])
+          avail = [i for i in ids if i not in used]
+          if not avail:
+              state["used_ids"] = []
+              avail = ids
+              print("all topics cycled - rotation reset")
+          picked = avail[0]
+          topic = next(t for t in scripted if t["id"] == picked)
+          state["used_ids"].append(picked)
+          state["last_topic"] = picked
+          state["last_run"] = pkt.strftime("%H:%M")
+          state["last_run_date"] = pkt.strftime("%F")
+          json.dump(state, open("history_rotation.json", "w"), indent=2)
+          # SEO file for upload_youtube.py (expects {"seo": {...}})
+          seo = dict(topic["seo"])
+          # attribute CC BY-SA bed used in the video
+          seo["description"] = seo["description"] + (
+              "\n\nBackground audio: morning birds dawn chorus "
+              "(Wikimedia Commons, CC BY-SA 4.0).")
+          json.dump({"seo": seo}, open(f"out/seo-{picked}.json", "w",
+                                       encoding="utf-8"),
+                    ensure_ascii=False, indent=1)
+          with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+              f.write(f"topic={picked}\n")
+              f.write(f"title={topic['title_urdu']}\n")
+          print(f"picked: {picked} - {topic['title_urdu']}")
+          PYEOF
+
+      - name: Build narration script
+        run: |
+          python3 scripts/build_history_script.py \
+            "${{ steps.pick.outputs.topic }}" out/script.txt
+
+      - name: Synthesize voiceover (Edge TTS)
+        run: |
+          python3 scripts/synth_history_voice.py out/script.txt out/voice.mp3
+          ffprobe -v error -show_entries format=duration -of csv=p=0 out/voice.mp3
+
+      - name: Build 16:9 video
+        run: |
+          python3 scripts/build_history_video.py \
+            out/voice.mp3 out/script.txt.meta.json out/history.mp4
+
+      - name: Verify output
+        run: |
+          [ -f out/history.mp4 ] && [ ! -L out/history.mp4 ] || { echo "MISSING out/history.mp4"; exit 1; }
+          ffprobe -v error -show_entries stream=codec_name,width,height -of csv out/history.mp4
+          ffprobe -v error -show_entries format=duration -of csv=p=0 out/history.mp4
+          ls -lh out/history.mp4
+
+      - name: Publish GitHub Release (public URL for FB)
+        id: release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TAG="history-$(date -u +%Y%m%d)"
+          gh release create "$TAG" --title "History $TAG" \
+            --notes "${{ steps.pick.outputs.topic }} ${{ steps.pick.outputs.title }}" out/history.mp4
+          echo "tag=$TAG" >> $GITHUB_OUTPUT
+          echo "url=https://github.com/${{ github.repository }}/releases/download/$TAG/history.mp4" >> $GITHUB_OUTPUT
+
+      - name: Upload to YouTube (public long-form)
+        id: yt
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          TOPIC: ${{ steps.pick.outputs.topic }}
+        run: |
+          python3 scripts/upload_youtube.py out/history.mp4 "out/seo-$TOPIC.json" | tee yt_out.txt
+          echo "url=$(grep -o 'https://www.youtube.com/watch?v=[^ ]*' yt_out.txt | head -1)" >> $GITHUB_OUTPUT
+
+      - name: Upload to Facebook (Page video)
+        env:
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+          TOPIC: ${{ steps.pick.outputs.topic }}
+          VIDEO_URL: ${{ steps.release.outputs.url }}
+        run: |
+          if [ -z "$FB_PAGE_TOKEN" ]; then echo "FB secrets not set - skipping"; exit 0; fi
+          FB_CAP=$(python3 -c "import json;print(json.load(open('out/seo-$TOPIC.json'))['seo']['description'])")
+          FB_TITLE=$(python3 -c "import json;print(json.load(open('out/seo-$TOPIC.json'))['seo']['title'])")
+          echo "=== FB ==="
+          python3 scripts/upload_facebook.py --file-url "$VIDEO_URL" --title "$FB_TITLE" --description "$FB_CAP" | tee -a results.txt || echo "FB FAILED" | tee -a results.txt
+
+      - name: Commit rotation state
+        run: |
+          git config user.name "autopilot" && git config user.email "autopilot@zikr-e-ilahi"
+          git add history_rotation.json
+          git commit -m "history rotation: ${{ steps.pick.outputs.topic }}" || true
+          git push
+
+      - name: Summary
+        run: |
+          echo "## History ${{ steps.pick.outputs.topic }} - ${{ steps.pick.outputs.title }}" >> $GITHUB_STEP_SUMMARY
+          echo "YouTube: ${{ steps.yt.outputs.url }}" >> $GITHUB_STEP_SUMMARY
+          echo "Release: ${{ steps.release.outputs.url }}" >> $GITHUB_STEP_SUMMARY
+          cat results.txt >> $GITHUB_STEP_SUMMARY 2>/dev/null || true
