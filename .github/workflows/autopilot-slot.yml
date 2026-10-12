@@ -20,7 +20,8 @@ name: Autopilot Slot — build + all-platform publish
 on:
   schedule:
     # 07:00 / 13:00 / 20:00 PKT = 02:00 / 08:00 / 15:00 UTC
-    - cron: "0 2,8,15 * * *"
+    # minute 13 (not 0) to avoid GitHub scheduler congestion at top of hour
+    - cron: "13 2,8,15 * * *"
   workflow_dispatch:
     inputs:
       slot:
