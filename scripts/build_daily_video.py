@@ -29,6 +29,7 @@ import subprocess
 import tempfile
 import shutil
 import logging
+import time
 
 BASE = os.path.dirname(os.path.abspath(__file__))
 FORK = os.path.dirname(BASE)
@@ -167,7 +168,24 @@ def synth_segments(segments, workdir):
             continue
         logger.info(f"TTS {i+1}/{len(segments)} [{seg['voice']} @ {seg.get('rate', '+0%')}]: "
                     f"{seg['text'][:45]}...")
-        synthesize(seg["text"], seg["voice"], mp3_path, rate=seg.get("rate", "+0%"))
+        # Retry with exponential backoff: Edge TTS sometimes 403s/rate-limits
+        # datacenter IPs (GitHub runners). 4 attempts: immediate, 30s, 90s, 240s.
+        last_err = None
+        for attempt in range(4):
+            try:
+                synthesize(seg["text"], seg["voice"], mp3_path, rate=seg.get("rate", "+0%"))
+                last_err = None
+                break
+            except Exception as e:
+                last_err = e
+                wait = [0, 30, 90, 240][attempt]
+                logger.warning(f"TTS attempt {attempt+1}/4 failed: {e} — retrying in {wait}s")
+                if wait:
+                    time.sleep(wait)
+        if last_err is not None:
+            raise RuntimeError(f"TTS failed after 4 attempts for segment {i}: {last_err}")
+        # Gentle pacing between requests to avoid triggering rate limits
+        time.sleep(5)
         out.append((mp3_path, probe(mp3_path)))
     return out
 
