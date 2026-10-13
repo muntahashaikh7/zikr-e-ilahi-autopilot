@@ -54,7 +54,7 @@ jobs:
           python-version: "3.11"
 
       - name: Install Python deps
-        run: pip install -q arabic_reshaper pillow edge-tts
+        run: pip install -q arabic_reshaper pillow edge-tts gtts
 
       - name: Pick entry for this slot
         id: pick

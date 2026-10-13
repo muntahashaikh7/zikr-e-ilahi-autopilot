@@ -28,7 +28,9 @@ from edge_tts.drm import DRM
 
 
 def proxy_parts():
-    p = os.environ["https_proxy"]  # http://user:pass@host:port
+    p = os.environ.get("https_proxy")  # http://user:pass@host:port
+    if not p:
+        raise RuntimeError("proxy tunnel requested but https_proxy is not set")
     creds, hostport = p.split("://", 1)[1].split("@", 1)
     host, port = hostport.split(":")
     return creds, host, int(port)
@@ -159,18 +161,41 @@ def synthesize_direct(text, voice, out_path, timeout=60, rate="+0%", pitch="+0Hz
     return out_path
 
 
+def synthesize_gtts(text, out_path, lang="ar"):
+    """Last-resort TTS via Google Translate TTS. Works from datacenter IPs
+    where Edge TTS 403s. Voice is simpler than Edge neural voices, but it
+    keeps the pipeline alive. Returns out_path (mp3)."""
+    from gtts import gTTS
+    gTTS(text=text, lang=lang).save(out_path)
+    return out_path
+
+
 def synthesize(text, voice, out_path, timeout=60, _ssml=None, rate="+0%", pitch="+0Hz", volume="+0%"):
-    # Auto-route: direct edge_tts when NOT behind the sandbox proxy,
-    # proxy-tunnel when https_proxy is set (this VM).
+    # Auto-route with graceful fallbacks:
+    #   1. direct edge_tts when NOT behind the sandbox proxy,
+    #   2. proxy-tunnel when https_proxy is set (this VM),
+    #   3. gTTS last resort (Edge 403s datacenter IPs like GitHub runners).
+    # Never raises a bare KeyError; the final error lists every route tried.
     import os
-    if "https_proxy" not in os.environ and _ssml is None:
+    errors = []
+    use_proxy = "https_proxy" in os.environ
+    if not use_proxy and _ssml is None:
         try:
             return synthesize_direct(text, voice, out_path, timeout,
                                      rate=rate, pitch=pitch, volume=volume)
-        except Exception:
-            pass  # fall through to proxy tunnel
-    return synthesize_via_proxy(text, voice, out_path, timeout, _ssml,
-                                rate, pitch, volume)
+        except Exception as e:
+            errors.append(f"direct edge-tts failed: {e}")
+    if use_proxy:
+        try:
+            return synthesize_via_proxy(text, voice, out_path, timeout, _ssml,
+                                        rate, pitch, volume)
+        except Exception as e:
+            errors.append(f"proxy-tunnel edge-tts failed: {e}")
+    try:
+        return synthesize_gtts(text, out_path)
+    except Exception as e:
+        errors.append(f"gtts fallback failed: {e}")
+    raise RuntimeError("all TTS routes failed: " + " | ".join(errors))
 
 
 def synthesize_via_proxy(text, voice, out_path, timeout=60, _ssml=None, rate="+0%", pitch="+0Hz", volume="+0%"):
