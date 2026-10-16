@@ -134,7 +134,7 @@ jobs:
           if [ -z "$IG_TOKEN" ] || [ -z "$IG_USER_ID" ]; then echo "IG secrets not set - skipping"; exit 0; fi
           IG_CAP=$(python3 -c "import json;print(json.load(open('out/mp-$ENTRY.json'))['platforms']['instagram']['caption'])")
           echo "=== IG ==="
-          python3 scripts/upload_instagram.py "$VIDEO_URL" "$IG_CAP" | tee -a results.txt || echo "IG FAILED" | tee -a results.txt
+          python3 scripts/upload_instagram.py "$VIDEO_URL" "$IG_CAP" | tee -a results.txt
 
       - name: Upload to Facebook (Page video)
         env:
@@ -147,7 +147,7 @@ jobs:
           FB_CAP=$(python3 -c "import json;print(json.load(open('out/mp-$ENTRY.json'))['platforms']['facebook']['caption'])")
           FB_TITLE=$(python3 -c "import json;print(json.load(open('out/seo-$ENTRY.json'))['seo']['title'])")
           echo "=== FB ==="
-          python3 scripts/upload_facebook.py --file-url "$VIDEO_URL" --title "$FB_TITLE" --description "$FB_CAP" | tee -a results.txt || echo "FB FAILED" | tee -a results.txt
+          python3 scripts/upload_facebook.py --file-url "$VIDEO_URL" --title "$FB_TITLE" --description "$FB_CAP" | tee -a results.txt
 
       - name: TikTok status
         run: |
