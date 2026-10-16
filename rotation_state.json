@@ -1,7 +1,7 @@
 {
   "category_last_used": {
     "akhlaq": "akhlaq-006",
-    "dhikr": "dhikr-007",
+    "dhikr": "dhikr-008",
     "dua": "dua-004"
   },
   "last_batch_date": "2026-10-16",
@@ -23,6 +23,7 @@
     "dhikr-006",
     "akhlaq-006",
     "dua-004",
-    "dhikr-007"
+    "dhikr-007",
+    "dhikr-008"
   ]
 }
