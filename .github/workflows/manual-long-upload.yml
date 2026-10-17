@@ -120,12 +120,24 @@ jobs:
           ls -la video.mp4
           ffprobe -v error -show_entries stream=codec_name,width,height -of csv video.mp4
 
+      - name: Publish GitHub Release (public URL for Facebook)
+        id: release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TAG="long-${{ inputs.video }}-$(date -u +%Y%m%d-%H%M)"
+          gh release create "$TAG" --title "Long video $TAG" \
+            --notes "${{ inputs.video }}" video.mp4
+          echo "tag=$TAG" >> $GITHUB_OUTPUT
+          echo "url=https://github.com/${{ github.repository }}/releases/download/$TAG/video.mp4" >> $GITHUB_OUTPUT
+
       - name: Upload to YouTube (public)
         env:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
         run: |
+          set -o pipefail
           python3 scripts/upload_youtube.py video.mp4 seo-long.json | tee yt_out.txt
           grep -o 'https://www.youtube.com/watch?v=[^ ]*' yt_out.txt | head -1
 
@@ -133,9 +145,12 @@ jobs:
         env:
           FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
           FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+          VIDEO_URL: ${{ steps.release.outputs.url }}
         run: |
-          python3 scripts/upload_facebook.py --file-path video.mp4 \
+          set -o pipefail
+          python3 scripts/upload_facebook.py --file-url "$VIDEO_URL" \
             --title "$FB_TITLE" --description "$FB_CAPTION" | tee fb_out.txt
+          grep -q 'PUBLISHED:' fb_out.txt
 
       - name: Record upload URLs
         run: |
