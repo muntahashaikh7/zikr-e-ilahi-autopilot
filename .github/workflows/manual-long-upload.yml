@@ -107,16 +107,12 @@ jobs:
 
       - name: Reassemble MP4 from staged chunks
         run: |
+          # chunks are already in the checkout (committed to main)
           STAGE="staging/${{ inputs.video }}"
-          mkdir -p dl && cd dl
-          curl -sL --fail "https://raw.githubusercontent.com/${{ github.repository }}/main/$STAGE/MANIFEST.txt" -o MANIFEST.txt
-          while read -r p; do
-            [ -n "$p" ] && curl -sL --fail -o "$p" "https://raw.githubusercontent.com/${{ github.repository }}/main/$STAGE/$p"
-          done < MANIFEST.txt
-          cat part_*.bin > video.mp4
+          ls "$STAGE"/part_*.bin | wc -l
+          cat "$STAGE"/part_*.bin > video.mp4
           ls -la video.mp4
           ffprobe -v error -show_entries stream=codec_name,width,height -of csv video.mp4
-          cd ..
 
       - name: Upload to YouTube (public)
         env:
@@ -124,7 +120,7 @@ jobs:
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
         run: |
-          python3 scripts/upload_youtube.py dl/video.mp4 seo-long.json | tee yt_out.txt
+          python3 scripts/upload_youtube.py video.mp4 seo-long.json | tee yt_out.txt
           grep -o 'https://www.youtube.com/watch?v=[^ ]*' yt_out.txt | head -1
 
       - name: Upload to Facebook Page (video)
@@ -132,5 +128,5 @@ jobs:
           FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
           FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
         run: |
-          python3 scripts/upload_facebook.py --file-path dl/video.mp4 \
+          python3 scripts/upload_facebook.py --file-path video.mp4 \
             --title "$FB_TITLE" --description "$FB_CAPTION" | tee fb_out.txt
