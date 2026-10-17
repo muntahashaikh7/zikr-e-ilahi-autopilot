@@ -109,9 +109,10 @@ jobs:
         run: |
           STAGE="staging/${{ inputs.video }}"
           mkdir -p dl && cd dl
-          for p in $(curl -s "https://api.github.com/repos/${{ github.repository }}/contents/$STAGE/MANIFEST.txt" | python3 -c "import json,sys,base64; print(base64.b64decode(json.load(sys.stdin)['content']).decode())"); do
-            curl -sL -o "$p" "https://raw.githubusercontent.com/${{ github.repository }}/main/$STAGE/$p"
-          done
+          curl -sL --fail "https://raw.githubusercontent.com/${{ github.repository }}/main/$STAGE/MANIFEST.txt" -o MANIFEST.txt
+          while read -r p; do
+            [ -n "$p" ] && curl -sL --fail -o "$p" "https://raw.githubusercontent.com/${{ github.repository }}/main/$STAGE/$p"
+          done < MANIFEST.txt
           cat part_*.bin > video.mp4
           ls -la video.mp4
           ffprobe -v error -show_entries stream=codec_name,width,height -of csv video.mp4
