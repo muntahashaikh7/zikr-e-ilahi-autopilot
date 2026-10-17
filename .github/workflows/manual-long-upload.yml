@@ -15,6 +15,11 @@ on:
         options:
           - 003-al-imran
           - 018-al-kahf
+      skip_facebook:
+        description: "Skip Facebook upload (already live there)"
+        required: false
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -132,7 +137,6 @@ jobs:
           echo "url=https://github.com/${{ github.repository }}/releases/download/$TAG/video.mp4" >> $GITHUB_OUTPUT
 
       - name: Upload to YouTube (public)
-        continue-on-error: true
         env:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
@@ -143,6 +147,7 @@ jobs:
           grep -o 'https://www.youtube.com/watch?v=[^ ]*' yt_out.txt | head -1
 
       - name: Upload to Facebook Page (video)
+        if: ${{ !inputs.skip_facebook }}
         env:
           FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
           FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
@@ -156,7 +161,8 @@ jobs:
       - name: Record upload URLs
         run: |
           YT_URL=$(grep -o 'https://www.youtube.com/watch?v=[^ ]*' yt_out.txt | head -1)
-          FB_ID=$(grep -oP 'PUBLISHED:\s*\K[0-9]+' fb_out.txt | head -1)
+          FB_ID=""
+          if [ -f fb_out.txt ]; then FB_ID=$(grep -oP 'PUBLISHED:\s*\K[0-9]+' fb_out.txt | head -1) || true; fi
           echo "## ${{ inputs.video }} — $(date -u +%F_%T_UTC)" >> upload-log.md
           echo "- YouTube: $YT_URL" >> upload-log.md
           echo "- Facebook video ID: $FB_ID" >> upload-log.md
