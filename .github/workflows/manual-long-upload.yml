@@ -1,5 +1,7 @@
 # One-off upload for pre-built long videos (Quran recitation) to YouTube + Facebook.
-# Trigger: workflow_dispatch with video choice + public MP4 URL.
+# The MP4s are staged in the repo (staging/<video>/part_*.bin) because they exceed
+# git's single-file limits; the workflow reassembles them.
+# Trigger: workflow_dispatch with video choice.
 # Uses the repo's working YT/FB secrets (local OAuth is revoked).
 name: Manual long-video upload
 
@@ -13,10 +15,6 @@ on:
         options:
           - 003-al-imran
           - 018-al-kahf
-      file_url:
-        description: "Public MP4 download URL (Facebook fetches it; runner downloads it for YouTube)"
-        required: true
-        type: string
 
 permissions:
   contents: read
@@ -101,18 +99,23 @@ jobs:
                     open("seo-long.json", "w", encoding="utf-8"), ensure_ascii=False)
           with open(os.environ["GITHUB_ENV"], "a") as f:
             f.write(f"FB_TITLE={m['title']}\n")
-            # multiline via delimiter
             f.write("FB_CAPTION<<EOF\n" + m["fb_caption"] + "\nEOF\n")
           print("SEO written for", video)
           PYEOF
         env:
           VIDEO: ${{ inputs.video }}
 
-      - name: Download MP4 (for YouTube)
+      - name: Reassemble MP4 from staged chunks
         run: |
-          curl -L --fail -o video.mp4 "${{ inputs.file_url }}"
+          STAGE="staging/${{ inputs.video }}"
+          mkdir -p dl && cd dl
+          for p in $(curl -s "https://api.github.com/repos/${{ github.repository }}/contents/$STAGE/MANIFEST.txt" | python3 -c "import json,sys,base64; print(base64.b64decode(json.load(sys.stdin)['content']).decode())"); do
+            curl -sL -o "$p" "https://raw.githubusercontent.com/${{ github.repository }}/main/$STAGE/$p"
+          done
+          cat part_*.bin > video.mp4
           ls -la video.mp4
           ffprobe -v error -show_entries stream=codec_name,width,height -of csv video.mp4
+          cd ..
 
       - name: Upload to YouTube (public)
         env:
@@ -120,7 +123,7 @@ jobs:
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
         run: |
-          python3 scripts/upload_youtube.py video.mp4 seo-long.json | tee yt_out.txt
+          python3 scripts/upload_youtube.py dl/video.mp4 seo-long.json | tee yt_out.txt
           grep -o 'https://www.youtube.com/watch?v=[^ ]*' yt_out.txt | head -1
 
       - name: Upload to Facebook Page (video)
@@ -128,5 +131,5 @@ jobs:
           FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
           FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
         run: |
-          python3 scripts/upload_facebook.py --file-url "${{ inputs.file_url }}" \
+          python3 scripts/upload_facebook.py --file-path dl/video.mp4 \
             --title "$FB_TITLE" --description "$FB_CAPTION" | tee fb_out.txt
