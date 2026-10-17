@@ -132,6 +132,7 @@ jobs:
           echo "url=https://github.com/${{ github.repository }}/releases/download/$TAG/video.mp4" >> $GITHUB_OUTPUT
 
       - name: Upload to YouTube (public)
+        continue-on-error: true
         env:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
