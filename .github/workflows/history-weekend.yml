@@ -143,7 +143,9 @@ jobs:
           FB_CAP=$(python3 -c "import json;print(json.load(open('out/seo-$TOPIC.json'))['seo']['description'])")
           FB_TITLE=$(python3 -c "import json;print(json.load(open('out/seo-$TOPIC.json'))['seo']['title'])")
           echo "=== FB ==="
-          python3 scripts/upload_facebook.py --file-url "$VIDEO_URL" --title "$FB_TITLE" --description "$FB_CAP" | tee -a results.txt || echo "FB FAILED" | tee -a results.txt
+          set -o pipefail
+          python3 scripts/upload_facebook.py --file-url "$VIDEO_URL" --title "$FB_TITLE" --description "$FB_CAP" | tee -a results.txt
+          grep -q 'PUBLISHED:' results.txt
 
       - name: Commit rotation state
         run: |
