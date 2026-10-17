@@ -1,0 +1,48 @@
+name: Debug YT token refresh
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  debug:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test YT refresh with full error body
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: |
+          python3 - << 'PYEOF'
+          import json, os, urllib.parse, urllib.request, urllib.error
+          body = urllib.parse.urlencode({
+              "client_id": os.environ["YT_CLIENT_ID"],
+              "client_secret": os.environ["YT_CLIENT_SECRET"],
+              "refresh_token": os.environ["YT_REFRESH_TOKEN"],
+              "grant_type": "refresh_token"}).encode()
+          req = urllib.request.Request("https://oauth2.googleapis.com/token", data=body)
+          try:
+              with urllib.request.urlopen(req, timeout=60) as r:
+                  resp = json.load(r)
+                  print("REFRESH OK, token len:", len(resp.get("access_token", "")))
+          except urllib.error.HTTPError as e:
+              print("HTTP", e.code)
+              print("BODY:", e.read().decode()[:500])
+          PYEOF
+      - name: Test FB Page token
+        env:
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+        run: |
+          python3 - << 'PYEOF'
+          import os, urllib.parse, urllib.request, urllib.error, json
+          token = os.environ["FB_PAGE_TOKEN"]
+          pid = os.environ["FB_PAGE_ID"]
+          url = f"https://graph.facebook.com/v21.0/{pid}?" + urllib.parse.urlencode({"fields": "name", "access_token": token})
+          try:
+              with urllib.request.urlopen(url, timeout=30) as r:
+                  print("FB TOKEN OK:", json.load(r))
+          except urllib.error.HTTPError as e:
+              print("HTTP", e.code)
+              print("BODY:", e.read().decode()[:500])
+          PYEOF
