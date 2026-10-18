@@ -130,7 +130,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          TAG="long-${{ inputs.video }}-$(date -u +%Y%m%d-%H%M)"
+          TAG="long-${{ inputs.video }}-$(date -u +%Y%m%d-%H%M)-${{ github.run_number }}"
           gh release create "$TAG" --title "Long video $TAG" \
             --notes "${{ inputs.video }}" video.mp4
           echo "tag=$TAG" >> $GITHUB_OUTPUT
