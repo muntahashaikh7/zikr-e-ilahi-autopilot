@@ -13,6 +13,7 @@ import os
 import sys
 import urllib.parse
 import urllib.request
+import urllib.error
 
 
 def refresh_token(cid, sec, ref):
@@ -20,8 +21,13 @@ def refresh_token(cid, sec, ref):
         "client_id": cid, "client_secret": sec,
         "refresh_token": ref, "grant_type": "refresh_token"}).encode()
     req = urllib.request.Request("https://oauth2.googleapis.com/token", data=body)
-    with urllib.request.urlopen(req, timeout=60) as r:
-        return json.loads(r.read())["access_token"]
+    try:
+        with urllib.request.urlopen(req, timeout=60) as r:
+            return json.loads(r.read())["access_token"]
+    except urllib.error.HTTPError as e:
+        # fail loud with Google's real error body (invalid_grant / invalid_client / ...)
+        print("TOKEN_REFRESH_FAILED:", e.code, e.read().decode()[:500], file=sys.stderr)
+        raise
 
 
 def resumable_upload(token, mp4_path, seo):
@@ -49,8 +55,12 @@ def resumable_upload(token, mp4_path, seo):
             "X-Upload-Content-Length": str(size),
             "X-Upload-Content-Type": "video/mp4",
         })
-    with urllib.request.urlopen(req, timeout=120) as r:
-        session = r.headers["Location"]
+    try:
+        with urllib.request.urlopen(req, timeout=120) as r:
+            session = r.headers["Location"]
+    except urllib.error.HTTPError as e:
+        print("UPLOAD_SESSION_FAILED:", e.code, e.read().decode()[:500], file=sys.stderr)
+        raise
     req = urllib.request.Request(
         session, method="PUT",
         headers={
