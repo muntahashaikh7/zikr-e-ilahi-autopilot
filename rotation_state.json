@@ -1,10 +1,10 @@
 {
   "category_last_used": {
-    "akhlaq": "akhlaq-008",
+    "akhlaq": "akhlaq-009",
     "dhikr": "dhikr-008",
     "dua": "dua-008"
   },
-  "last_batch_date": "2026-10-17",
+  "last_batch_date": "2026-10-18",
   "notes": "Each daily batch = 1 dhikr + 1 akhlaq + 1 dua, cycling sequentially within each category in bank order. Never repeat an entry until its category has fully cycled.",
   "used_ids": [
     "dhikr-004",
@@ -30,6 +30,7 @@
     "dua-006",
     "akhlaq-008",
     "dua-007",
-    "dua-008"
+    "dua-008",
+    "akhlaq-009"
   ]
 }
