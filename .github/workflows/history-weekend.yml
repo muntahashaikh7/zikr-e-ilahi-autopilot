@@ -144,8 +144,8 @@ jobs:
           FB_TITLE=$(python3 -c "import json;print(json.load(open('out/seo-$TOPIC.json'))['seo']['title'])")
           echo "=== FB ==="
           set -o pipefail
-          python3 scripts/upload_facebook.py --file-url "$VIDEO_URL" --file-path "out/history.mp4" --title "$FB_TITLE" --description "$FB_CAP" | tee -a results.txt
-          grep -q 'PUBLISHED:' results.txt
+          python3 scripts/upload_facebook.py --file-url "$VIDEO_URL" --file-path "out/history.mp4" --title "$FB_TITLE" --description "$FB_CAP" | tee -a results.txt || echo "FB upload did not publish (FB blackout) - continuing"
+          grep -q 'PUBLISHED:' results.txt || echo "FB: not published - YouTube + rotation state continue"
 
       - name: Commit rotation state
         run: |
