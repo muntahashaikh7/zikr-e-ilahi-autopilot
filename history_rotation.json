@@ -1,11 +1,12 @@
 {
-  "last_run": "16:58",
-  "last_run_date": "2026-11-01",
-  "last_topic": "umar-farooq",
+  "last_run": "16:52",
+  "last_run_date": "2026-11-07",
+  "last_topic": "salahuddin",
   "notes": "Weekend Islamic History long videos. Each run picks the next scripted topic not in used_ids. When all scripted topics are used, used_ids resets (never repeat until full cycle).",
   "used_ids": [
     "seerah-makki",
     "seerah-madani",
-    "umar-farooq"
+    "umar-farooq",
+    "salahuddin"
   ]
 }
